@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Hi There! ;)
+                   _,.,
+                 ,'   ,'
+                /   ,'
+               /   ,
+              /   ,
+             /   '
+            /   ,'
+            '.__|
+             |  |
+             |__|
+             |  |
+             |__|
+             |  |
+             |__|
+             |  |
+             |__|
+             |, |
+             |--|
+             |__|
+             |  |
+             |--|
+             |__|
+             |__|        ,-.
+             |__|'     ,'  /
+        _,.-'     ',_,' o /
+       /     8888        /
+       |                /
+        1              /
+        `L   8888     /
+         |           /
+        /    ====    \
+       /     ____     \
+      /     (____)  o  \
+     /             o    \
+    /             o     ,'
+   /               _,.'^
+  /        __,.-"~^
+ ',,..--~~^
+-->
+<html>
+
+<head>
+    <title>{title}</title>
+    <meta charset="utf-8" />
+    <link rel=stylesheet type=text/css href="style.css">
+</head>
+
+<body>
+<!-- main -->
+<DIV class="main clear">
+    <!-- top_menu -->
+    <div class="top_menu clear">
+        <div><a href="index.html">About me</a></div>
+        <div><a href="projects.html">Projects</a></div>
+        <div><a href="/blog/travel.html">Travel</a></div>
+        <div><a href="books.html">Books</a></div>
+        <div><a href="/blog/blog.html">Blog</a></div>
+        <!--<form>
+            <input name="search" type="text" class="search">
+        </form>-->
+    </div>
+    <!-- /top_menu -->
+    <!-- content -->
+    <div id="content" class="content clear">
+      {content}
+    </div>
+    <!-- /content -->
+</DIV>
+<!-- /main -->
+</body>
+</html>

@@ -1,0 +1,416 @@
+<div class="content clear">
+    <h1>Articles</h1>
+    <div class="article clear">
+        <h2>Setting up PGP for email encryption</h2>
+        <div class="block clear">
+            <div><time>2016-06-30</time></div>
+            <div></div>
+        </div>
+        <p>I'm interested in encrypting my communications since childhood. I created my own (very primitive) crypto algorithms to be able to deliver my messages without anyone else looking at them. Today I do most of my communications via email, which can be easily encrypted with PGP. So here is a basic manual on how to setup your email encryption with a bit of easy steps.</p>
+        <p>We will use GPG which is actually free implementation of the OpenPGP standard made by GNU project. Initial run of <i>gpg</i> looks like this:
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    [asafonov@localhost ~]$ gpg --list-keys
+    gpg: directory `/home/asafonov/.gnupg' created
+    gpg: new configuration file `/home/asafonov/.gnupg/gpg.conf' created
+    gpg: WARNING: options in `/home/asafonov/.gnupg/gpg.conf' are not yet active during this run
+    gpg: keyring `/home/asafonov/.gnupg/pubring.gpg' created
+    gpg: /home/asafonov/.gnupg/trustdb.gpg: trustdb created</pre>
+        </div>
+        <p>Now we are ready to generate the secret key. The command is <i>gpg --gen-key</i>. During the process you'll have to answer some questions according keys like key size and key type. Feel free to choose whatever you find appropriate
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    [asafonov@localhost ~]$ gpg --gen-key
+    gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+    gpg: keyring `/home/asafonov/.gnupg/secring.gpg' created
+    Please select what kind of key you want:
+       (1) RSA and RSA (default)
+       (2) DSA and Elgamal
+       (3) DSA (sign only)
+       (4) RSA (sign only)
+    Your selection? 1
+    RSA keys may be between 1024 and 4096 bits long.
+    What keysize do you want? (2048) 4096
+    Requested keysize is 4096 bits
+    Please specify how long the key should be valid.
+             0 = key does not expire
+          &lt;n&gt;  = key expires in n days
+          &lt;n&gt;w = key expires in n weeks
+          &lt;n&gt;m = key expires in n months
+          &lt;n&gt;y = key expires in n years
+    Key is valid for? (0) 0
+    Key does not expire at all
+    Is this correct? (y/N) y
+
+    You need a user ID to identify your key; the software constructs the user ID
+    from the Real Name, Comment and Email Address in this form:
+        "Heinrich Heine (Der Dichter) &lt;heinrichh@duesseldorf.de&gt;"
+
+    Real name: Alex Safonov
+    Email address: me@asafonov.org
+    Comment:
+    You selected this USER-ID:
+        "Alex Safonov &lt;me@asafonov.org&gt;"
+
+    Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
+    You need a Passphrase to protect your secret key.</pre>
+        </div>
+        <p>When all questions are answered, GPG will need some random bytes to create the key.</p>
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    We need to generate a lot of random bytes. It is a good idea to perform
+    some other action (type on the keyboard, move the mouse, utilize the
+    disks) during the prime generation; this gives the random number
+    generator a better chance to gain enough entropy.
+
+    Not enough random bytes available.  Please do some other work to give
+    the OS a chance to collect more entropy! (Need 39 more bytes)</pre>
+        </div>
+        <p>You can do some work on your computer now to generate these bytes, but it can take a while. To make the process way more quick I usually run
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    sudo rngd -f -r /dev/urandom</pre>
+        </div>
+        <p>After that there is a success message!</p>
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    public and secret key created and signed.
+
+    gpg: checking the trustdb
+    gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+    gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+    pub   4096R/1A800DDC 2016-06-30
+          Key fingerprint = DCE7 AB4A AFA4 D5A3 7750  B880 129B 8B69 1A80 0DDC
+    uid                  Alex Safonov &lt;me@asafonov.org&gt;
+    sub   4096R/F81557AF 2016-06-30</pre>
+        </div>
+        <p>To start a secure communication you have to send your partners your public key. Here it is:</p>
+        <div style="border: 1px solid #aaa; padding: 6px">
+        <pre>
+    [asafonov@localhost ~]$ gpg --export --armor me@asafonov.org
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v1
+
+    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
+    =Fxbj
+    -----END PGP PUBLIC KEY BLOCK-----</pre>
+         </div>
+         <p>Now your partners should import your key</p>
+         <div style="border: 1px solid #aaa; padding: 6px">
+         <pre>gpg --import asafonov.pub</pre>
+         </div>
+         <p>That's all, now you're ready to send and receive encrypted emails. The key to encrypt your message in Gnus is <i>C-c C-m c o</i>.</p>
+         <p><img src="images/gpg_gnus.png" style="width:100%"></p>
+         <p>Sending a test message you can make sure that everything works fine and nobody can read your message</p>
+         <p><img src="images/gpg_gmail.png" style="width:100%"></p>
+         <p>Have fun!</p>
+         <b>UPDATE:</b>
+         <p>To transfer your secret key between several machines you'll use these 2 commands:
+         <div style="border: 1px solid #aaa; padding: 6px">
+         <pre>gpg --export-secret-key --armor me@asafonov.org</pre>
+         </div>
+         <div style="border: 1px solid #aaa; padding: 6px">
+         <pre>gpg --allow-secret-key-import --import asafonov.gpg</pre>
+         </div>
+    </div>
+    <div class="article clear">
+        <h2>How a template engine should look like?</h2>
+        <div class="block clear">
+            <div><time>2012-07-24</time></div>
+            <div></div>
+        </div>
+        <p>Hi there!<p>Today I'm going to share my thoughts on how a template engine should look like. I used smarty a lot before and my python code does not use templates at all. I did not think that this is so extremily important thing but something was wrong with both of my approaches.<p>The first one is VERY powerful. With smarty you can do anything you want. You can calculate something, define application logic directly in template. This is quite impressive but do I really want to implement application logic in template? I don't think so. Moreover the syntax of smarty is rather complex. You wanted a template engine but the programming language you've got.<p>The second approach is not to use templates at all - I can hear you're laughing at me. Ok, guys, no comments. <p>So I tried to think what do I want from template engine? How to make it good but not too complex. So here is the result of my labors:
+        <p>First of all I tried to decide what the template engine shoul do? I tried to remember about MVC pattern and exclude all application logic from the template. All it has to do is to present information to user. So<p>What the template engine should do?<ul><li>Replace variables</li><li>Use conditions</li><li>Use cycles (iterations)</li><li>Display the content of another template</li></ul></p><p>No any other logic should not be in template engine. Everything else should do the script, that uses the template.<p>Now I'll try to describe every point more detailed. I understand it is simple but let me fill some more lines of my blog =). Ok, here it comes<p><i>1. Template engine should replace variables</i><p>This is easy right? You just replace placeholder with the real value. For instance:
+        <pre>
+        &lt;head&gt;
+            &lt;title&gt;{title}&lt;/title&gt;
+        &lt;/head&gt;
+        </pre>
+        <p><i>2. Template engine should use conditions</i><p>I think it'll be enough to use the value of the boolean variable in template.
+        <pre>
+        {can_edit?&lt;a href=”/edit”&gt;Edit&lt;/a&gt;:No rights to edit}
+        </pre>
+        <p>Here the script have to define boolean variable 'can_edit' and pass it to the template. Now if this variable equals to TRUE the link for editing appers, otherwise - the error message. No other additional conditions (like &lt;, &gt;, == etc) are requiered. Template engine should not make decisions based on the value of some variables or expressions. Only based on true and false variables was calculated by the script.
+        <p><i>3. Template engine should use cycles (iterations)</i>
+        <p>I think that the most easy way to implement it is to use opening and closing tags which define the beginning and the end of the cycle. Check this out:
+        <pre>
+        {for:news}
+            Date: {date}
+            Title: {title}
+            Text: {text}
+        {/for:news}
+        </pre>
+        <p>In the script you need to define variable 'news' as
+        <pre>
+        array(
+            array(
+                ‘date’=>...,
+                ‘title’=>...,
+                ‘text’=>...
+            ),
+            …,
+            array(
+                ‘date’=>...,
+                ‘title’=>...,
+                ‘text’=>…
+            )
+        )</pre>
+        <p>Template engine sees that 'news' is an array and for each element of the array fill the piece of template between opening and closing tag.
+        <p><i>4. Template engine should display the content of another template</i>
+        <p>This is not the additional feature of the template engine, but very convenient thing. First of all to not to make big and hard to eat templates. Isn't it better to have a number of small and simple templates instead of big one? Example for cycles:
+        <pre>
+        &lt;div class=”news”&gt;
+            {for:news}
+                {include:news.tpl}
+            {/for:news}
+        &lt;/div&gt;
+        </pre>
+        <p>IMO, that is all that template engine shoul be.
+        <p>I would be glad to hear any comments. Take care
+        <div class="tags clear">
+            <a>tech</a>
+        </div>
+    </div>
+
+    <div class="article clear">
+        <h2>Life changes</h2>
+        <div class="block clear">
+            <div><time>2012-06-11</time></div>
+            <div></div>
+        </div>
+        <p>Hello everyone!<p>As I mentioned before that there are a lot of changes in my life these days, so this post will be about life changes. Not mine but in general. Yep, I know theory is boring and haven't deal with practice at all, but these thoughts made my way for changes easier, so may be it will help someone else.<p>So, here they are:<p><i>If you want changes, don't be affraid of them</i><p>Yep, people always think that if I change something it will not be the same. If I quit my job there will not be my salary twice a month, if I change my laptop I need to change my keyboard habits. If I do something that changes something else, it will break my habit of having something else! Calm down, there are no changes without breaking something. Something will be broken but something definitely will be fixed. So if you want changes, don't expect it will be the same. It's your decision that changes are better than not breaking things. <p>So there is another rule that helped me. I call it<p><i>Beleive in yourself</i><p>People often think: "I want to be a writer, but there are not so many good writers in the world. I'm affraid that I'm not one of them, so I will be a journalist." or "I want to be a programmer but it's too compliated and I will not be world-famous cause you need to buil something revolutionary. I will live the life of SAP/ABAP developer or I can bee a good software architect.". Remember yorself? Just forget it. The thing I realized is that all these people who built this world are just people not smarter than you. They just didn't have the "why me" thought but strong desire to work. This is the only difference I see, so if you want it you can be one of them. Just beleive that you can.<p><i>To create is better than to consume</i><p>I mean don't care about money a lot. If it's enough to pay the bills and to keep your family afloat you may enjoy the greatest feeling of creating things. Just try, I'm sure you'll like it!<p>And the last rule, the most important: I'm really sure you've figured out it already.<p>Have fun ;-)
+    </div>
+
+    <div class="article clear">
+        <h2>Why I chose Slackware</h2>
+        <div class="block clear">
+            <div><time>2012-03-30</time></div>
+            <div></div>
+        </div>
+        <p>I am often asked why I chose Slackware as my primary operating system. I never thought about it before, I just used it and I am happy with it. So here I'll try to explain why Slackware is better than anything else for me. Maybe it'll help you to make a choice.</p><p>So, Slackware is simple. May it sounds crazy for beginners but it&#39;s true. Of course Slackware comes with attitude and assumes you&#39;re smart, but if you try a bit you&#39;ll know it.<p>For example, Slackware packages are big. To install python3 there is 1 package (compare it with ~20 Debian packages). There are no package dependencies. Yep, it&#39;s great. I wanna know what is in my system and I do not need wine if I&#39;m installing lmms or I do not need cvs if installing git. There is no such problem in Slackware. And finally - every package comes with SlackBuild - bash script with which the package was built from the source code. Feel free to modify it with flags you need or upgrade the version and build your own package. This is the easiest way to build a package I ever seen!<p>The second reason I love Slackware is stability. I’m not a kind of guy who like to figure out how to make the system work. I do not like fixing bugs after the system is installed. I do not like to google for workarounds of the broken parts of software. All I want is to install the system and start to work and Slackware gives me it. It is the most stable system I ever tried including commercially supported. Another pros is that you do not need internet connection to start working. All software I need comes from the box.<p>The third reason is &quot;vanilla&quot; packages. Slackware doesn&#39;t patch upstream packages to change logos, menus, wallpapers, developing configurators etc. It is very useful if you want to participate in open source development. You do not have custom code but the upstream code. Also you may find all the sources on you DVD disk with Slackware installation.<p>And the last reason (I realized it last, it&#39;s not the last by priority) - is Slackware community. All these people starting from Pat Volkerding, core Slackware team and ending with the random guys from <a href="https://www.linuxquestions.org/questions/slackware-14/" target="_blank">linuxquestions.org</a> are very professional and confident people in community I ever met. Moreover they are very kind and fun, it&#39;s real pleasure to communicate with them.<p>So if you&#39;re choosing your OS, give Slackware a chance, it&#39;s really great.<p>Have fun!</p>
+    </div>
+
+    <div class="article clear">
+        <h2>Making things is easy</h2>
+        <div class="block clear">
+            <div><time>2012-02-21</time></div>
+            <div></div>
+        </div>
+        <p>Today I wanna share with you my thoughts on some pleasures of life. I do not talk about things like tasty food, listening good music or having fun with friends. I'm talking about making. Making things.<br><br>I'm sure you already know this sweet feeling when you accomplish a big work and you may see the result of applied time and forces. This is your creation. You put a lot of yourself in it, and now it contains some part of you. It may be anything - home-made bread, raised flower, a table for the kitchen and many other things.<br><br>Does it really important? I think so. Making is a kind of self expression - it allows to show other people and yourself a part of you soul through your creation. It expresses your feelings, your talent, your mind and freedom with the music you've made, house you've built, dinner you cooked. There are no such things as bad creations if it comes from your heart.<br><br>Another thing to realize is that not the possession of a thing gives you this pleasure, but the process of creation. You have nothing you may use and after a while you have something that you built almost from nothing. You made it the way you wanted it to be. The way it should be.<br><br>I think that is one of the main reasons I enjoy programming. Firstly you have nothing but the computer and a programming language. Computer itself is just a box. It can not do anything without software. But it have a bricks you may make something special. All you need is tool to build the bricks together in the right sequence. Yep, programming language gives you this tool. All you need to do now is to work for the best. You will solve problems, you will be tired, you will break something and rebuild it. But it's all nothing compared with the feeling you seeing your creature is growing, developing and becoming the thing. It brings so much fun.<br><br>Enjoy your life!<br><br>Have fun!</p>
+    </div>
+
+    <div class="article clear">
+        <h2>...and the new day is breaking through</h2>
+        <div class="block clear">
+            <div><time>2012-01-31</time></div>
+            <div></div>
+        </div>
+        <p>Hello everybody!<br><br>I've got very exciting news for you. As you understood from my previous post I am tired a little to make things which are not fun enough. I know it's my job what I paid for but I needed to have a break from such things like Financial Services, Banking and Enterprise. There are no playing element for this which I think is very important. Without playing games life becomes dull, boring and too serious.<br><br>I think you already know my two main passions in life: programming and music. The last years programming became more important part but without music my life became a little bit more serious that I wanted it to be. So I took a pause and thought: what can I do with it to bring more fun in my programming life? I need to add more music in it.<br><br>I compiled audacity and played with it a little. I was suprised that I still remember how to play guitar and what reverberation effect means. But if I want to add drums I need to install Hydrogen or LMMS. I tried to find DAW for Linux which I might like but I could not. All of theese programs have advantages but I could not choose one that I will love. So there is an answer how to merge my programming skills and passion to music. I can write DAW which I will use to produce the music.<br><br>Surely I chose python to develop this software. First of all I didn't see any DAWs written with python (this is the plus, right?) and the second one - I really hate compiling. But native python does not fully support cross-platform audio processing. I tried to play with ossaudiodev and WinAPI but it's terrible. So I needed to choose the library for audio processing and GUI. Since I'm a long time KDE fan Qt is my choice. I contacted Aaron Seigo about python-qt bindings and he recommended PyQt for that. That was the starting point.<br><br>So today I want to announce Sunrise DAW - cross-platform software to provide the environment for producing music. Now it's just a very young project. It can record sound, play recording sound and apply effects like delay and changing volume. But I'm very exciting about it and I get so much fun developing it so I hope soon it will be one more great music production software.<br><br>To run Sunrise on your machine you need python, Qt and PyQt installed. Sunrise works with both python2 and py3k.<br><br>BTW you may see the screenshot below:<br><img src="images/sunrise/01.png"><br><br>As always I'll be appreciate any help.<br><br>Have fun!</p>
+    </div>
+
+    <div class="article clear">
+        <h2>Why does enterprise software suck... and always will</h2>
+        <div class="block clear">
+            <div><time>2012-01-20</time></div>
+            <div></div>
+        </div>
+        <p>For the last 3 years I develop enterprise software as my primary job. It’s boring and uncool and there is no special pleasure you get while solving programming problems. I was wondering why it is so and what can I do to make it more exciting. Unfortunately the only answer I’ve got is pretty easy: there is nothing you can do about it.<br><br>Enterprise software is made not for people but for organizations without faces, characters and voices. There will not be happy users of your software. All the decisions are made by the super important big boss department who just don’t care about how people will use it. Only they want is to product the checklist you need to complete to satisfy them. Cause they need to satisfy another department.<br><br>You say “stop, what about creative part of software development? I’ve got great ideas which people would love. This will make our product better. I’m ready to develop this features by myself”. Ok, that’s great! You need to fill Form1 that lets you to fill Form2 that lets you to fill Form3 that you may present to the junior secretary of the junior secretary of the secretary department. If it is approved you may to fill another 4 or 5 Forms to present it to another person. You’ve done all this stuff? You’re crazy! Forget it, we’ve got the checklist.<br><br>I ask myself: Do I use this kind of software I develop? Do my friends use this software? Does anyone I really care about use it? And the last one: does it make the world a better place? No, no, no and … no.<br><br>Ask this questions to the programmer who develops so called “social” software. They do it not for departments but for actual people. People may feel, may say a word about desirable features, bugs or just simple “thank you for that”. This situation is so different. Users of this software actually want to use it. They are really happy.<br><br>Why do we love facebook, mozilla, winamp, vlc, twitter, emacs etc? Because we’re actually using it. First of all it was made for us and only after that to satisfy enterprises. Life will be the same if some giant of the enterprise software will go away. Companies will easily replace it with another product. No one really loved it and cared about it. But if your favorite browser/player/editor disappears someday how it will affect you? I think you’ll be at list sad a little.<br><br>So as brilliant Jamie Zawinski said some time ago: “If you want to do something that's going to change the world, build software that people want to use instead of software that managers want to buy.”</p>
+    </div>
+
+    <div class="article clear">
+        <h2>Python and GSM modem</h2>
+        <div class="block clear">
+            <div><time>2011-03-24</time></div>
+            <div></div>
+        </div>
+        <p>A couple of days ago I had a task to send SMS message from my laptop using GSM modem. It was a great task and I had a really nice time trying to solve it.</p>
+        <p>To implement this script I chose python because of its simplicity and power. Python is the language you can use everywhere - text processing, gui programming, 3d modeling etc. So I decided it would be a great choice.</p>
+        <p>To send SMS in text mode was really easy using AT commands. The script was about 10 lines of code and worked great on my Slackware machine. I wanted to stop marking the problem solved but I found out that my script can not send SMS in unicode format. It was critical for me and I started to look for solution</p>
+        <p>It came quickly. To send SMS in unicode you have to use PDU format. Unfortunately I could not find good description of it and this task entailed 2 days of hard coding and debugging the number of bytes I did not understood.</p>
+        <p>Finally the problem is solved. You can find the description of PDU format below:<br />
+        <br />
+        <i>1 byte</i> (00) - Indicates that we do not supply a SMSC number<br />
+        <i>1 byte</i> (11 or 51) - Indicates is it one message or a number of concatenated messages<br />
+        <i>1 byte</i> (00) - ?<br />
+        <i>1 byte</i> (0A, 0B, 0C ..) - the length of the telephone number<br />
+        <i>1 byte</i> (91) - Indicates the international format of the phone number<br />
+        <i>6 bytes</i> - encoded phone number<br />
+        <i>1 byte</i> (00) - protocol identifier<br />
+        <i>1 byte</i> (00, 08) - message encoding (7bit or 16bit)<br />
+        <i>1 byte</i> (AA) - keep message alive time<br />
+        <i>1 byte</i> - the length of the user data<br />
+        <i>1 byte</i> (05) the length of UDH (ONLY FOR CONCATENATED MESSAGES)<br />
+        <i>2 bytes</i> (0003) - ? (ONLY FOR CONCATENATED MESSAGES)<br />
+        <i>1 byte</i> () - message ID. Should be the same in all concatenated messages (ONLY FOR CONCATENATED MESSAGES)<br />
+        <i>1 byte</i> - current message number (ONLY FOR CONCATENATED MESSAGES)<br />
+        <i>1 byte</i> - the number of concatenated messages (ONLY FOR CONCATENATED MESSAGES)<br />
+        <i>? bytes</i> - message text in UTF-16</p>
+        <p>If you are interested in python code it may be found on my github page.</p>
+        <p>Have fun!</p>
+    </div>
+
+    <div class="article clear">
+        <h2>Note to self</h2>
+        <div class="block clear">
+            <div><time>2011-01-22</time></div>
+            <div></div>
+        </div>
+        <p>How to setup mutt for GMail?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ cat ~/.muttrc
+        set imap_user = "me@asafonov.org"
+        set imap_pass = "Password"
+
+        set smtp_url = "smtp://me@asafonov.org@smtp.gmail.com:587/"
+        set smtp_pass = "Password"
+        set from = "me@asafonov.org"
+        set realname = "Alex Safonov"
+
+        set folder = "imaps://imap.gmail.com:993"
+        set spoolfile = "+INBOX"
+        set postponed="+[Gmail]/Drafts"
+
+        set header_cache=~/.mutt/cache/headers
+        set message_cachedir=~/.mutt/cache/bodies
+        set certificate_file=~/.mutt/certificates
+
+        set move = no
+        set editor = "vim"
+        </pre>
+        </div>
+        <p>How to make vim to use two spaces instead of tab?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ cat ~/.vimrc
+        set tabstop=2
+        set shiftwidth=2
+        set expandtab
+        set softtabstop=2
+        colorscheme slate
+        syntax on
+        </pre>
+        </div>
+        <p>How to set up mcabber for Google talk account?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ cat ~/.mcabber/mcabberrc
+        set jid = me@asafonov.org
+        set server = talk.google.com
+        set ssl = 1
+        set ssl_verify = 0
+        </pre>
+        </div>
+        <p>How to change default xterm font?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ xterm -fa mono -fs 9 -geometry 150x40
+        </pre>
+        </div>
+        <p>How to set up fluxbox keyboard shortcarts?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ cat ~/.fluxbox/keys
+        OnDesktop Mouse1 :HideMenus
+        OnDesktop Mouse2 :WorkspaceMenu
+        OnDesktop Mouse3 :RootMenu
+        OnDesktop Mouse4 :NextWorkspace
+        OnDesktop Mouse5 :PrevWorkspace
+
+        Mod1 Tab :NextWindow
+        Mod4 X :execCommand xterm -fa mono -fs 9 -geometry 150x40
+        Mod1 F4 :Close
+        Mod1 F2 :execCommand fbrun
+        Mod4 F1 :Workspace 1
+        Mod4 F2 :Workspace 2
+        Mod4 F3 :Workspace 3
+        Mod4 F4 :Workspace 4
+        Mod4 F11 :RootMenu
+        </pre>
+        </div>
+        <p>How to set fluxbox background?</p>
+        <div style="border: 2px solid rgb(170, 170, 170); padding: 6px; color: rgb(0, 0, 255); font-size: 12px;">
+        <pre>
+        alex@laptop:~$ cat ~/.fluxbox/init
+        ...
+        session.screen0.rootCommand:	fbsetbg /home/alex/scr.jpg
+        ...
+        </pre>
+        </div>
+        <p>I am so happy if I could help someone else.</p>
+    </div>
+
+    <div class="article clear">
+        <h2>Switching to Git</h2>
+        <div class="block clear">
+            <div><time>2010-10-22</time></div>
+            <div></div>
+        </div>
+        <p>Hi everybody!</p>
+        <p>There are some changes in source code sharing you should know about. As you know the source code was available through Subversion. But the things have changed and I decided to switch to git. So all repo were moved to github.</p>
+        <p>Just a few weeks ago I thought that Subversion is the greatest SCM. I read about git but I even didn`t want to try to use it cause I was sure that distributed version control system is not the right choice for me. But I`ve listened a lot of good things about git from people a respect so I decide to give git a chance :-)</p>
+        <p>The first impression was just &quot;Wow!!!&quot;. There are a lot of reasons to love in git</p>
+        <ul class="p">
+            <li>Git is extremely fast. Every diff, merge, branch works less than a second cause the whole repo is on your local machine</li>
+            <li>Branches are amazing in git! You can easily create branch even if your computer disconnected. To merge branches you do not need to remember the last merge revision to use the correct merge command. It`s all automatic.</li>
+            <li>The file structure is more simple and clear. Another one great thing - there are no system folders everywhere. Just one. (Remember .svn?)</li>
+            <li>To use git as a command-line tool is more convenient for me against using subversion</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>Studying git was really interesting process and I created branches, merge, diffs instead of work for a couple of days. And now if someone asks me to recommend SCM it will be definitely git.</p>
+        <p>So all Subversion repos are closed. The actual version of source code may be obtained via git:<br />
+        <i>git clone git://github.com/asafonov/tangerine.git</i><br />
+        <i>git clone git://github.com/asafonov/widesktop.git</i><br />
+        <i>git clone git://github.com/asafonov/insomnia.git</i><br />
+        <i>git clone git://github.com/asafonov/Stargazer.git</i><br />
+        Have fun!</p>
+    </div>
+</div>
