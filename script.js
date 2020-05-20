@@ -13,7 +13,7 @@ function menuFunction(el) {
 
   const isFlex = x.style.display == 'flex';
   x.style.display = isFlex ? 'none' : 'flex';
-  el.setAttribute('data-before', isFlex ? '///', "X");
+  el.setAttribute('data-before', isFlex ? '///' : "X");
 }
 
 function leftmenuFunction(el) {
