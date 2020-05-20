@@ -1,0 +1,208 @@
+:hover.gli::before {
+                                  visibility: visible;
+                                  animation: noise-anim-1 0.05s infinite linear alternate-reverse;
+                                  animation-fill-mode: forwards;
+}
+
+:hover.gli::after {
+                                  visibility: visible;
+                                  animation: noise-anim-2 0.01s infinite linear alternate;
+                                  animation-fill-mode: backwards;
+}
+
+.gli::before,
+.gli::after {
+              content: attr(data-text);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              animation-play-state: paused;
+}
+
+.gli::before {
+                left: -0.3vw;
+                text-shadow: 0.5vw 0 black;
+                clip-path: inset(33% 0 30% 0);
+                visibility: hidden;
+}
+
+.gli::after {
+                left: 0.3vw;
+                text-shadow: 0.5vw 0 black;
+                clip-path: inset(58% 0 -12% 0);
+                visibility: hidden;
+}
+
+@keyframes noise-anim-1 {
+                          0% {
+                            clip-path: inset(33% 0 30% 0);
+                          }
+                          20% {
+                            clip-path: inset(33% 92% 30% 1%); 
+                          }
+                          40% {
+                            clip-path: inset(33% 43% 30% 1%);
+                          }
+                          60% {
+                            clip-path: inset(33% 25% 30% 58%);
+                          }
+                          80% {
+                            clip-path: inset(33% 54% 30% 7%);
+                          }
+                          100% {
+                            clip-path: inset(33% 58% 30% 43%);
+                          }
+}
+
+@keyframes noise-anim-2 {
+                        100% {
+                          clip-path: inset(58% 0 -12% 0);
+                        }
+                        80% {
+                          clip-path: inset(58% 92% -12% 1%);
+                        }
+                        60% {
+                          clip-path: inset(58% 43% -12% 1%);
+                        }
+                        40% {
+                          clip-path: inset(58% 25% -12% 58%); left: 1vw;
+                        }
+                        20% {
+                          clip-path: inset(58% 54% -12% 7%);
+                        }
+                        0% {
+                          clip-path: inset(58% 58% -12% 43%);
+                        }
+}
+
+.glitch_content {      
+                  width: 100%;
+                  height: 100%;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  display: flex;
+                  align-items: center;
+                  background-color: black;
+                  z-index: 9999;
+      }
+
+.glitch_content {
+                     animation-name: start_movie;  
+                     animation-duration: 2.2s;
+                     animation-iteration-count: 1; 
+                     animation-fill-mode: forwards;
+                     animation-timing-function: ease;
+}
+
+@keyframes start_movie {
+                          0% {
+                                  
+                                   visibility: visible; 
+                          }
+                          99% {
+                                  
+                                   visibility: visible; 
+                          }
+                          100% {
+                                    visibility: hidden;
+                          }
+}
+
+.text {
+      margin: auto;
+      font-family: rieven-uncial, sans-serif;
+      font-size: 9vw;
+      line-height: 10vw;
+      color: red;
+      animation-name: start_movie_t;
+      animation-duration: 0.5s;
+      animation-delay: 1.7s;
+}
+
+@keyframes start_movie_t {
+                          0% {
+                                  
+                                   font-size: 9vw;
+                          }
+                          
+                          100% {
+                                   font-size: 0vw;
+                          }
+}
+
+.home.glitch::before, 
+.home.glitch::after {
+                      font-size: 7vw;
+                      color: red;
+                      animation-delay: 0.2s;
+                     
+}
+
+.home.glitch::before {
+                        animation-delay: 0.3s;
+                        animation-duration: 0.02s;
+                        animation-iteration-count: 11;
+}
+
+.glitch::before, 
+.glitch::after {
+                  content: attr(data-text);
+                  position: absolute;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  visibility: hidden;
+                 }
+
+.glitch:before {
+                left: 0;
+                text-shadow: 0.5vw 0 black;
+                clip-path: inset(33% 0 30% 0);
+                animation: glitch-anim-1 0.1s 6 linear alternate-reverse;
+                animation-delay: 1.2s;
+                
+              }
+
+.glitch:after {
+                left: 0;
+                text-shadow: 0.5vw 0 black;
+                clip-path: inset(73% 0 13% 0);
+                animation: glitch-anim-2 0.03s 6 linear alternate-reverse;
+                animation-delay: 1s;
+                
+    }
+
+@keyframes glitch-anim-1 {
+                          0% {
+                            left: 0.3vw; visibility: visible;
+                          }
+                          25% {
+                            left: -4vw; 
+                          }
+                          26% {
+                            left: 0.3vw;
+                          }
+
+                          100% {
+                            left: 0vw; visibility: hidden;
+                          }
+}
+
+@keyframes glitch-anim-2 {
+                          0% {
+                            left: -0.3vw; visibility: visible;
+                          }
+                          35% {
+                            left: -4vw; 
+                          }
+                          38% {
+                            left: -0.3vw;
+                          }
+
+                          100% {
+                            left: -0vw; visibility: hidden;
+                          }
+}
