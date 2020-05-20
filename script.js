@@ -11,13 +11,9 @@ function menuFunction(el) {
     return ;
   }
 
-  if (x.style.display == "flex") {
-    x.style.display = "none";
-    el.setAttribute("data-before", "///");
-  } else {
-    x.style.display = "flex";
-    el.setAttribute("data-before", "X");
-  }
+  const isFlex = x.style.display == 'flex';
+  x.style.display = isFlex ? 'none' : 'flex';
+  el.setAttribute('data-before', isFlex ? '///', "X");
 }
 
 function leftmenuFunction(el) {
