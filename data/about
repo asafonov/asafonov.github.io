@@ -1,37 +1,18 @@
-<h1>About me</h1>
-<script src="js/age.js"></script>
-<aside>
-    <div class="oq">&#8220;</div>
-    <div class="cq">&#8221;</div>
-    <pre>
-        $user = registry::getInstance()->getService('user');
-        
-        $user->firstName = 'Alexander';
-        $user->lastName = 'Safonov';
-        $user->age = <script>document.write(calcAge())</script>;
-        $user->occupation = 'Programmer';
-        
-        $user->save();
-        
-        $template->setData(
-                $user->asArray()
-        )->render();
-    </pre>
-</aside>
-<img src="images/avatar.png" class="avatar">
-<p>Hi! My name is Alexander Safonov and I am a programmer currently living in Russia. I like programming (not to be confused with software engineering) a lot, so at my spare time I create awesome software. The full list you can find in "Projects" section of this site.</p>
-<p>In my CS related life I am interested in web development (Javascript, PHP, Python, Rich Internet Applications), mobile devices programming, information security and computer-geek culture ¯\_(ツ)_/¯</p>    
+<div class="pic">
+  <img src="images/avatar.png" class="me">
+</div>
+
+<p>Hi! My name is Alexander Safonov and I am a programmer currently living in Russia. I like programming (not to be confused with software engineering) a lot, so at my spare time I create awesome software. The full list you can find in “Projects” section of this site.</p>
+<p>In my CS related life I am interested in web development (Javascript, PHP, Python, Rich Internet Applications), mobile devices programming, information security and computer-geek culture ¯\_(ツ)_/¯</p>
 <p>But not by computer alone. I also like:</p>
-<ul>
-    <li>Music. I can play guitar, bass, drums. I also like idea of making music with computer.</li>
-    <li>Reading (science fiction mostly)</li>
-    <li>Trips and visiting new places</li>
-    <li>Coffee. Black, just like my metal</li>
-    <li>Good companies with interesting talks</li>
-    <li>A lot of other stuff, actually</li>
+<ul class="text_ul">
+  <li>Music. I can play guitar, bass, drums. I also like idea of making music with computer.</li>
+  <li>Reading (science fiction mostly)</li>
+  <li>Trips and visiting new places</li>
+  <li>Coffee. Black, just like my metal</li>
+  <li>Good companies with interesting talks</li>
+  <li>A lot of other stuff, actually</li>
 </ul>
-<p>If you need to contact me I can be reached via email: <a href="mailto:me@asafonov.org">me@asafonov.org</a> (<a href="data/asafonov.asc" target="_blank">PGP</a>). I hate talking on the phone</p>
-<p>I don't use social networks a lot but you may find me on <a href="https://github.com/asafonov" target="_blank">github</a>.</p>
+<p>If you need to contact me I can be reached via email: <a href="mailto:me@asafonov.org">me@asafonov.org</a> (<a href="data/asafonov.asc">PGP</a>). I hate talking on the phone</p>
+<p>I don't use social networks a lot but you may find me on <a href="https://github.com/asafonov">github</a>.</p>
 <p>Have fun!</p>
-
-
