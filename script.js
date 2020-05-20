@@ -1,7 +1,6 @@
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  document.querySelector(".home").className = 'home glitch';
 }
 
 function menuFunction(el) {
