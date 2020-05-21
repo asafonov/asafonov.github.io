@@ -51,8 +51,17 @@ return [
     'sunrise' => [
       'template' => 'main',
       'data' => [
-        'title' => 'Alexander Safonov: Projects/Sunrise',
+        'title' => 'Alexander Safonov: Projects/Sunrise DAW',
         'content' => file_get_contents('data/sunrise'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
+    'tangerine' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Tangerine CMS',
+        'content' => file_get_contents('data/tangerine'),
         'class' => 'wrap',
         'projects_active' => 'active'
       ]

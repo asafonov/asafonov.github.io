@@ -11,7 +11,7 @@
       <aside>Free Digital Audio Workstation. It's cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/tangerine">
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="tangerine.html">
     <a>
       <h4>Tangerine</h4>
       <aside>Lightweighted, powerful and free content management system.</aside>
