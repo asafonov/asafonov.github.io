@@ -1,5 +1,5 @@
 <div class="left_menu">
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/monly">
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="monly.html">
     <a>
       <h4>Monly</h4>
       <aside>Awesome budget planner supporting transactions logging, budgets, reports, synchronization across your devices and a lot of other features.</aside>

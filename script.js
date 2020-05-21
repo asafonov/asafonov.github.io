@@ -16,6 +16,7 @@ function menuFunction (el) {
 }
 
 function leftmenuFunction (el) {
+  topFunction();
   el.style.order = '1';
   el.classList.add('sub');
   const href = el.getAttribute('data-href');

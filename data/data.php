@@ -39,6 +39,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'monly' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Monly',
+        'content' => file_get_contents('data/monly'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'travels' => [
       'template' => 'main',
       'data' => [
