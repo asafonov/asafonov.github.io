@@ -48,6 +48,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'sunrise' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Sunrise',
+        'content' => file_get_contents('data/sunrise'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'travels' => [
       'template' => 'main',
       'data' => [
