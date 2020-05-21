@@ -548,6 +548,24 @@ h4+aside {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+  :root {
+    --font_size: 2.1vw;
+    --h1_size: 6.5vw;
+    --h2_size: 5.1vw;
+    --mini_padding: 1.6vw;
+    --small_padding: 2.7vw;
+    --line_size: 3.3vw;
+    --padding: 4vw;
+    --maxi_padding: 8vw;
+    --anti_mini_padding: -1.6vw;
+    --anti_small_padding: -2.7vw;
+    --anti_font_size: -2.1vw;
+    --anti_line_size: -3.3vw;
+    --anti_padding: -4vw;
+    --anti_h2_size: -5.1vw;
+    --anti_h1_size: -6.5vw;
+    --anti_maxi_padding: 8vw;
+  }
 }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
