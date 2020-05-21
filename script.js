@@ -3,7 +3,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-function menuFunction(el) {
+function menuFunction (el) {
   const x = document.querySelector(".top_menu_mobile");
 
   if (x === null || x === undefined) {
@@ -15,7 +15,10 @@ function menuFunction(el) {
   el.setAttribute('data-before', isFlex ? '///' : "X");
 }
 
-function leftmenuFunction(el) {
-  const order = parseInt(el.style.order, 10);
-  el.style.order = (1 - order) + '';
+function leftmenuFunction (el) {
+  el.style.order = '1';
+  el.classList.add('sub');
+  const href = el.getAttribute('data-href');
+  const goto = function() {location.href = href;};
+  setTimeout(goto, 3000);
 }

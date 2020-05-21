@@ -34,7 +34,7 @@ return [
       'template' => 'main',
       'data' => [
         'title' => 'Alexander Safonov: Projects',
-        'content' => '<div style="text-align: center"><p>This website is <p>being updated. <p>This section is <p>coming soon</div>',
+        'content' => file_get_contents('data/projects'),
         'class' => 'wrap',
         'projects_active' => 'active'
       ]

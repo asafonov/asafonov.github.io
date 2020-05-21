@@ -1,90 +1,32 @@
-<div class="content clear">
-    <h1>Projects</h1>
-    <div class="projects clear">
-        <!-- items_col -->
-        <div class="items">
-            <!-- item -->
-            <a href="https://github.com/asafonov/monly" target="_blank">
-            <div class="item url">
-                <img src="images/monly.png">
-                <div class="review">
-                    <h1>Monly</h1>
-                    <p>Monly is an awesome budget planner. It supports transactions logging, budgets, reports, synchronization across your devices and a lot of other features. Monly is distributed so every device has it's own copy of data. You may loose a device, but not your data</p>
-                </div>
-            </div>
-            </a>
-            <!-- /item -->    
-            <!-- item -->
-            <a href="https://github.com/asafonov/stormbringer" target="_blank">
-            <div class="item url">
-            <img src="images/stormbringer.png">
-                <div class="review">
-                    <h1>Stormbringer email client</h1>
-                    <p>Stormbringer is awesome lightweighted email client written for real hackers ;-) Personally I use it on daily basis. So if you received email from me - 99% it was written with Stormbringer. </p>
-                </div>                
-            </div>
-            </a>
-            <!-- /item -->    
-        </div>    
-        <!-- /items_col -->    
-        <!-- items_col -->
-        <div class="items">
-            <a href="https://github.com/asafonov/sunrise" target="_blank">
-            <!-- item -->
-            <div class="item url">
-                <img src="images/sunrise/01.png">
-                <div class="review">
-                    <h1>Sunrise DAW</h1>
-                    <p>Sunrise is an awesome free Digital Audio Workstation written with the python and Qt. The main purpose of the project is to develop cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</p>
-                </div>
-            </div>
-            </a>
-            <!-- /item -->    
-            <!-- item -->
-            <a href="https://github.com/asafonov/eyeless" target="_blank">
-            <div class="item url" data-href="https://github.com/asafonov/eyeless">
-                <img src="images/canvas.png">
-                <div class="review">
-                    <h1>Eyeless JavaScript Framework</h1>
-                    <p>Eyeless is an awesome javascript framework to make dynamic GUI easy as possible</p>
-                </div>
-            </div>
-            </a>
-            <!-- /item -->     
-        </div>    
-        <!-- /items_col --> 
-        <!-- items_col -->
-        <div class="items">
-            <!-- item -->
-            <a href="https://github.com/asafonov/tangerine" target="_blank">
-            <div class="item url" data-href="https://github.com/asafonov/tangerine">
-                <img src="images/tangerine/tangerine_scr.jpg">
-                <div class="review">
-                    <h1>Tangerine CMS</h1>
-                    <p>Tangerine is an awesome free content management system. It was made to be very lightweighted but easy to use and powerful system to build your own website.</p>
-                </div>
-            </div>
-            </a>
-            <!-- /item -->
-            <!-- item -->
-            <div class="item">
-                <!-- quote -->
-                <aside>
-                    <div class="oq">&#8220;</div>
-                    <div class="cq">&#8221;</div>
-                    <pre>
-$user = new user;
-$user->id = $id;
-$user->load();
-print_r($user->asArray();
-$user->delete();
-                    </pre>
-                </aside>
-                <!-- quote -->
-            </div>
-            <!-- /item --> 
-
-        </div>    
-        <!-- /items_col -->                             
-    </div>
+<div class="left_menu">
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/monly">
+    <a>
+      <h4>Monly</h4>
+      <aside>Awesome budget planner supporting transactions logging, budgets, reports, synchronization across your devices and a lot of other features.</aside>
+    </a>
+  </div>
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/sunrise">
+    <a>
+      <h4>Sunrise DAW</h4>
+      <aside>Free Digital Audio Workstation. It's cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</aside>
+    </a>
+  </div>
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/tangerine">
+    <a>
+      <h4>Tangerine CMS</h4>
+      <aside>Lightweighted, powerful and free content management system.</aside>
+    </a>
+  </div>
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/stormbringer">
+    <a>
+      <h4>Stormbringer email client</h4>
+      <aside>Email client for real hackers.</aside>
+    </a>
+  </div>
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/eyeless">
+    <a>
+      <h4>Eyeless JavaScript Framework</h4>
+      <aside>Javascript framework to make dynamic GUI as easy as possible.</aside>
+    </a>
+  </div>
 </div>
