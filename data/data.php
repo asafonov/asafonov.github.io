@@ -39,6 +39,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'blockbuster' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Block\'Buster',
+        'content' => file_get_contents('data/blockbuster'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'monly' => [
       'template' => 'main',
       'data' => [

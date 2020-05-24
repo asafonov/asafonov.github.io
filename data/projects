@@ -1,4 +1,10 @@
 <div class="left_menu">
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="blockbuster.html">
+    <a>
+      <h4>Block'Buster</h4>
+      <aside>Simple HTML5 arkanoid-type game. There is also an Android application</aside>
+    </a>
+  </div>
   <div class="menu_item" onclick="leftmenuFunction(this)" data-href="monly.html">
     <a>
       <h4>Monly</h4>
