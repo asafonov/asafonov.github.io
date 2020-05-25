@@ -574,7 +574,7 @@ h4+aside {
     font-size: var(--padding);
   }
 
-    .content.main_page p {
+  .content.main_page p {
     width: 80%;
   }
 }
@@ -604,7 +604,7 @@ h4+aside {
   }
 
   .logo {
-        width: calc(var(--logo_size)*1.65);
+    width: calc(var(--logo_size)*1.65);
   }
 
   h4 {
@@ -663,6 +663,5 @@ h4+aside {
     object-fit: contain;
     margin-bottom: var(--padding);
   }
-
 
 }

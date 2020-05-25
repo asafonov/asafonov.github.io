@@ -1,8 +1,7 @@
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  var x = document.getElementsByClassName("home")[0];
-  x.setAttribute("class", "home glitch");
+  document.querySelector('.home').classList.add('glitch');
 }
 
 function menuFunction (el) {
@@ -19,8 +18,7 @@ function menuFunction (el) {
 
 function leftmenuFunction (el) {
   el.classList.add('active');
-  var x = document.getElementsByClassName("left_menu")[0];
-  x.setAttribute("class", "left_menu sub");
+  document.querySelector('.left_menu').classList.add('sub');
   const href = el.getAttribute('data-href');
   const goto = function() {location.href = href;};
   setTimeout(goto, 1300);
