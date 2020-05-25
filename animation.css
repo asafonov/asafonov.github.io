@@ -129,8 +129,6 @@
 }
 
 .home.glitch::before, .home.glitch::after {
-  font-size: 7vw;
-  color: red;
   animation-delay: 0.2s;
 }
 
@@ -195,71 +193,73 @@
   }
 }
 
-@keyframes menu-anim {
+.left_menu.sub .menu_item:not(.active),
+.left_menu.sub .menu_item.active aside {
+                                              animation: left_menu_anim 0.2s 3 linear forwards;
+                                              animation-fill-mode: forwards;
+                                              animation-delay: 0.1s;                                            
+}
+
+@keyframes left_menu_anim {
   0% {
-    left: 0vw;
+        opacity: 1;
+  }
+  20%{
+        opacity: 0;
+  }
+  30% {
+        opacity: 0;
+  }
+  40%{
+        opacity: 0;
   }
   50% {
-    left: 30vw;
+        opacity: 1;
   }
-  100% {
-    left: 30vw;
+  60%{
+        opacity: 0;
   }
+  70% {
+        opacity: 1;
+  }
+  80%{
+        opacity: 0;
+  }
+  90% {
+        opacity: 1;
+  }
+  100%{
+        opacity: 1;
+  }
+  
 }
 
-@keyframes menu-anim-h4 {
-  50% {
+.left_menu .menu_item h4,
+.left_menu .menu_item h4::before,
+.left_menu .menu_item aside {
+  transition: all 1s;
+}
+
+.left_menu .menu_item.active h4 {
     font-size: var(--h1_size);
     line-height: var(--h1_size);
     color: var(--red_color);
     font-weight: bolder;
-    max-width: 10vw;
-  }
-  100% {
-    font-size: var(--h1_size);
-    line-height: var(--h1_size);
-    color: var(--red_color);
-    font-weight: bolder;
-    max-width: 10vw;
-  }
+    transform: translateX(var(--maxi_padding));
+    animation: left_menu_anim 0.2s 4 linear alternate-reverse;
+    animation-delay: 0.4s;
 }
 
-@keyframes menu-anim-h4-before {
-  50% {
-    width: 30vw;
-    transform: translateX(-30vw);
+.left_menu .menu_item.active aside {
+  transform: translateX(var(--maxi_padding));
+}
+
+.left_menu .menu_item.active h4::before {
+    width: var(--maxi_padding);
+    left: calc(var(--anti_padding) - var(--anti_maxi_padding));
     border-bottom-color: var(--red_color);
-  }
-  100% {
-    width: 30vw;
-    transform: translateX(-30vw);
-    border-bottom-color: var(--red_color);
-  }
 }
 
-@keyframes menu-anim-aside {
-  50% {
-    opacity: 0;
-    overflow: hidden;
-  }
-  100% {
-    opacity: 0;
-    overflow: hidden;
-  }
-}
 
-.menu_item.sub {
-  animation: menu-anim 6s;
-}
 
-.menu_item.sub h4 {
-  animation: menu-anim-h4 6s;
-}
 
-.menu_item.sub aside {
-  animation: menu-anim-aside 6s;
-}
-
-.menu_item.sub h4::before {
-  animation: menu-anim-h4-before 6s;
-}
