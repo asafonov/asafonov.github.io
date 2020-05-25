@@ -1,6 +1,8 @@
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  var x = document.getElementsByClassName("home")[0];
+  x.setAttribute("class", "home glitch");
 }
 
 function menuFunction (el) {
@@ -16,10 +18,10 @@ function menuFunction (el) {
 }
 
 function leftmenuFunction (el) {
-  topFunction();
-  el.style.order = '1';
-  el.classList.add('sub');
+  el.classList.add('active');
+  var x = document.getElementsByClassName("left_menu")[0];
+  x.setAttribute("class", "left_menu sub");
   const href = el.getAttribute('data-href');
   const goto = function() {location.href = href;};
-  setTimeout(goto, 3000);
+  setTimeout(goto, 1300);
 }

@@ -9,6 +9,8 @@
   --menu_font: "hackman";
   --logo_font: "rieven-uncial";
 
+  --logo_size: 6.3vw;
+
   --font_size: 1.4vw;
   --h1_size: 4.3vw;
   --h2_size: 3.4vw;
@@ -110,6 +112,8 @@ a.h3, .left_menu a {
 a.home {
   border: none;
   position: absolute;
+  display: block;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
@@ -202,10 +206,9 @@ h4+aside {
   font-family: var(--menu_font);
   text-align: center;
   cursor: pointer;
-  padding-top: 8.3vw;
-  width: 20%;
+  padding-top: calc(var(--font_size)*4);
   margin: auto;
-  margin-top: var(--font_size);
+  margin-top: var(--padding);
 }
 
 .tiramisu::before, .tiramisu::after {
@@ -213,8 +216,8 @@ h4+aside {
   display: block;
   width: 100%;
   position: absolute;
-  line-height: 1.249vw;
-  top: var(--h2_size);
+  line-height: 0.9;
+  top: 0;
 }
 
 .tiramisu::before {
@@ -240,11 +243,12 @@ h4+aside {
 }
 
 .logo {
-  width: 10vw;
+  width: calc(var(--logo_size)*1.5);
 }
 
-.logo::before, .logo::after {
-  font-size: 6.3vw;
+.logo::before, .logo::after,
+.home::before, .home::after {
+  font-size: var(--logo_size);
   color: var(--logo_color);
   font-family: var(--logo_font);
 }
@@ -256,8 +260,8 @@ h4+aside {
 .logo::after {
   content: "s";
   position: relative;
-  top: 11.5%;
-  left: -15.5%;
+  top: 9%;
+  left: -16.5%;
 }
 
 .top_menu_mobile {
@@ -287,11 +291,12 @@ h4+aside {
 }
 
 .top_menu .active {
-  left: var(--anti_h1_size);
+  left: 0;
   cursor: default;
   position: absolute;
   color: white;
   font-size: larger;
+  margin-left: 0;
 }
 
 .top_menu .active.second {
@@ -501,8 +506,9 @@ h4+aside {
   align-self: flex-end;
 }
 
-.bottom_line span {
-  position: absolute;
+.bottom_line a {
+  color: inherit;
+  font-size: inherit;
 }
 
 .bottom_line .last, .bottom_line .social_links {
@@ -512,10 +518,6 @@ h4+aside {
 .last {
   color: var(--text_color_light);
   font-size: smaller;
-}
-
-.last:last-of-type {
-  flex-basis: 20%;
 }
 
 .social_links {
@@ -557,6 +559,7 @@ h4+aside {
     --line_size: 3.3vw;
     --padding: 4vw;
     --maxi_padding: 8vw;
+    --logo_size: 9.5vw;
     --anti_mini_padding: -1.6vw;
     --anti_small_padding: -2.7vw;
     --anti_font_size: -2.1vw;
@@ -566,13 +569,23 @@ h4+aside {
     --anti_h1_size: -6.5vw;
     --anti_maxi_padding: 8vw;
   }
+
+  h4 {
+    font-size: var(--padding);
+  }
+
+    .content.main_page p {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
   :root {
     --font_size: 4.2vw;
     --h1_size: 12.8vw;
     --h2_size: 10.2vw;
+
+    --logo_size: 18.9vw;
 
     --mini_padding: 2.7vw;
     --small_padding: 5.3vw;
@@ -591,11 +604,11 @@ h4+aside {
   }
 
   .logo {
-    width: 41vw;
+        width: calc(var(--logo_size)*1.65);
   }
 
-  .logo::before, .logo::after {
-    font-size: 20.4vw;
+  h4 {
+    font-size: var(--padding);
   }
 
   .top_menu .h3 {
@@ -625,14 +638,6 @@ h4+aside {
     text-align: left;
   }
 
-  .tiramisu {
-    margin-top: var(--padding);
-  }
-
-  .tiramisu::before, .tiramisu::after {
-    top: 0;
-  }
-
   .pic {
     max-height: 90vh;
     display: block;
@@ -659,11 +664,5 @@ h4+aside {
     margin-bottom: var(--padding);
   }
 
-  .home.glitch::before, .home.glitch::after {
-    font-size: 20.4vw !important;
-  }
 
-  .last:last-of-type {
-    flex-basis: 50%;
-  }
 }
