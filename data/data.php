@@ -16,7 +16,6 @@ return [
         'title' => 'Alexander Safonov: I did write code once',
         'content' => file_get_contents('data/about'),
         'class' => 'wrap',
-        'tiramisu' => '<div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>',
         'about_active' => 'active'
       ]
     ],
@@ -26,7 +25,6 @@ return [
         'title' => 'Alexander Safonov: Damaging my eyes',
         'content' => file_get_contents('data/books'),
         'class' => 'books wrap',
-        'tiramisu' => '<div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>',
         'books_active' => 'active'
       ]
     ],

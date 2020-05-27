@@ -23,3 +23,7 @@ function leftmenuFunction (el) {
   const goto = function() {location.href = href;};
   setTimeout(goto, 1300);
 }
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  document.querySelector('.tiramisu').style.display = document.body.offsetHeight < document.body.scrollHeight ? 'block' : 'none';
+});

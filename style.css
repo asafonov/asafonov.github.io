@@ -209,6 +209,7 @@ h4+aside {
   padding-top: calc(var(--font_size)*4);
   margin: auto;
   margin-top: var(--padding);
+  display: none;
 }
 
 .tiramisu::before, .tiramisu::after {
