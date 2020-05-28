@@ -24,6 +24,17 @@ function leftmenuFunction (el) {
   setTimeout(goto, 1300);
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+function handleTiramisuVisibility() {
   document.querySelector('.tiramisu').style.display = document.body.offsetHeight < document.body.scrollHeight ? 'block' : 'none';
+}
+
+function onResize() {
+  document.querySelector('.tiramisu').style.display = 'none';
+  handleTiramisuVisibility();
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  window.addEventListener('resize', onResize);
+  window.addEventListener('scroll', handleTiramisuVisibility);
 });
+
