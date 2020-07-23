@@ -32,9 +32,8 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   $page_num = get_page_num($i, $count, $per_page);
   $page_name = get_page_name($page_num, $file);
   $item_url = get_article_name($records[$i]->title, $records[$i]->date);
-  $content = isset($records[$i]->plain) ? nl2br($records[$i]->plain) : $records[$i]->html;
+  $content = isset($records[$i]->plain) ? '<p>' . str_replace("\n", '<p>', $records[$i]->plain) : $records[$i]->html;
   $listcontent = str_replace(['{title}', '{date}', '{announce}', '{item_url}'], [$records[$i]->title, $records[$i]->date, isset($records[$i]->announce) ? $records[$i]->announce : '', $item_url], $list_template);
-  $content = str_replace(['{title}', '{date}', '{content}', '{item_url}'], [$records[$i]->title, $records[$i]->date, $content, $item_url], $item_template);
 
   if (! empty($records[$i]->files)) {
     $images_count = substr_count($content, '{img}');

@@ -59,18 +59,18 @@ Hi There! ;)
         <div class="logo"><a href="index.html" class="home" data-text="as"></a></div>
         <div class="icon mobile" data-before="///" onclick="menuFunction(this)"></div>
         <div class="top_menu">
-          <a href="about.html" class="h3 gli {about_active}" data-text="About me">About me</a>
-          <a href="projects.html" class="h3 gli {projects_active}" data-text="Projects">Projects</a>
-          <a href="travels.html" class="h3 gli {travels_active}" data-text="Travels">Travels</a>
-          <a href="books.html" class="h3 gli {books_active}" data-text="Books">Books</a>
-          <a href="blog.html" class="h3 gli {blog_active}" data-text="Blog">Blog</a>
+          <a href="/about.html" class="h3 gli {about_active}" data-text="About me">About me</a>
+          <a href="/projects.html" class="h3 gli {projects_active}" data-text="Projects">Projects</a>
+          <a href="/travels.html" class="h3 gli {travels_active}" data-text="Travels">Travels</a>
+          <a href="/books.html" class="h3 gli {books_active}" data-text="Books">Books</a>
+          <a href="/blog.html" class="h3 gli {blog_active}" data-text="Blog">Blog</a>
         </div>
         <div class="top_menu_mobile">
-          <a href="about.html" class="h3 gli" data-text="About me">About me</a>
-          <a href="projects.html" class="h3 gli" data-text="Projects">Projects</a>
-          <a href="travels.html" class="h3 gli" data-text="Travels">Travels</a>
-          <a href="books.html" class="h3 gli" data-text="Books">Books</a>
-          <a href="blog.html" class="h3 gli" data-text="Blog">Blog</a>
+          <a href="/about.html" class="h3 gli" data-text="About me">About me</a>
+          <a href="/projects.html" class="h3 gli" data-text="Projects">Projects</a>
+          <a href="/travels.html" class="h3 gli" data-text="Travels">Travels</a>
+          <a href="/books.html" class="h3 gli" data-text="Books">Books</a>
+          <a href="/blog.html" class="h3 gli" data-text="Blog">Blog</a>
         </div>
       </div>
       <div class="content flex_line wrap clear">

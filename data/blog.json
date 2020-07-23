@@ -2,6 +2,7 @@
     {
         "date": "2015-09-27",
         "title": "My first half-marathon",
+        "announce": "Today me and Lena took a part in amazing event - half marathon in Golden Ring.",
         "plain": "Today me and Lena took a part in amazing event - half marathon in Golden Ring. There were 6 events but we could make only one in Rostov. Anyway it was hard, I mean really hard, but I definitelly will do it again.\n\nMy time is 01:53:40",
         "files": ["/blog/files/20150927.jpg"]
     },
@@ -26,12 +27,14 @@
     {
         "date": "2016-10-02",
         "title": "Marathon Kotor - Lovcen",
+        "announce": "Встали в воскресенье в половину шестого, чтобы успеть на автовокзал, приехать в другой город, потому что в 8 оттуда стартует горный поход.",
         "plain": "Встали в воскресенье в половину шестого, чтобы успеть на автовокзал, приехать в другой город, потому что в 8 оттуда стартует горный поход.",
         "files": ["/blog/files/20161002_1.jpg", "/blog/files/20161002_2.jpg", "/blog/files/20161002_3.jpg", "/blog/files/20161002_4.jpg", "/blog/files/20161002_5.jpg"]
     },
     {
         "date": "2016-10-17",
         "title": "Hello, Belgrade",
+        "announce": "It's nice to see you again, wonderful Belgrade",
         "plain": "It's nice to see you again, wonderful Belgrade",
         "files": ["/blog/files/20161017_1.jpg", "/blog/files/20161017_2.jpg"]
     },
@@ -56,6 +59,7 @@
         "date": "2017-09-03",
         "title": "Officially a marathoner",
         "plain": "Yes, it's true, I completed a marathon. 42 km in 4 hours and 40 minutes. And it was absolutely mindblowing and wonderful experience",
+        "announce": "Yes, it's true, I completed a marathon. 42 km in 4 hours and 40 minutes. And it was absolutely mindblowing and wonderful experience",
         "files": [
             "/blog/files/20170903_1.jpg",
             "/blog/files/20170903_2.jpg",
@@ -67,6 +71,7 @@
     {
         "date": "2017-09-23",
         "title": "Officially a surfer",
+        "announce": "It was a perfect day, perfect experience and the perfect birthday present",
         "plain": "It was a perfect day, perfect experience and the perfect birthday present",
         "files": [
             "/blog/files/20170923_1.jpg",
@@ -80,17 +85,19 @@
     {
         "date": "2018-07-02",
         "title": "How I did quit social media",
-        "html": "<div class='epigraph'>\"I believe I can see the futute<br>Cause I repeat the same routine\"<br>Trent Reznor</div><p>It's a usual day. I wake up at 5 or 6 AM, run about 45-60 minutes, have a shower, have a breakfast and here it is: the moment when I can fully relax on a sofa before I turn on my laptop and start working. But while having a lazy time I have a lot of things to catch up. The world was moving while I was sleeping, running, eating, working etc. I can't miss anything. What if it's something really important?<p>I open twitter. Usually I spend about 20-30 minutes a day reading it.<p>I read some hacker's joke today. Not very funny. I don't remember it though.<p><i>Scroll.</i><p>Someone's photo from vacation in Croatia.<p><i>Scroll.</i><p>One of my friends is drinking beer in a bar. Oh course you have to post a photo. Otherwise it doesn't count.<p><i>Scroll.</i><p>Microsoft Edge has been hacked. Again.<p><i>Scroll.</i><p>Puppies.<p>More puppies.<p>Another hacker's joke.<p><p><i>Scroll.</i><p><i>Scroll.</i><p><i>Scroll.</i><p>Scrolling is smoking of the 21st century.<p>After twitter is done I also have an Instagram account to look at. And I have to check \"cudos\" on Strava. And maybe there are some other news I want to read. So, after 40 minutes well spent I feel ready to work.<p>Tomorrow I will repeat the same routine. Because the world is moving while I am sleeping, running, eating and working.<p>The day after tomorrow I will repeat everything from the beginnig. The circle closed.<p>I like numbers, they help you estimate something your mind cannot realize. If I spend 30 minutes a day on social networks (I use it sometimes during the day to reply on something or just if I'm bored, but let's take minimum amount) it makes 182.5 hours during the year. This is approximately 23 standard working days. Just think about it. If I give up half an hour of social networks during the day I get the whole month of productivity. I can spend it on important things. My family, my side project, my hobbies or self-development. Everything of this list gives me MUCH MORE value than twitter or instagram or whatever.<p>After realizing that I have to know what to do.<p>So I did what everyone would do. I deleted my twitter and instagram accounts. I removed all social apps from my phone. I feel happier.<p>And what changed in my life now?<p>I have more time, I have a lot less stress.<p>I feel way more productive and less distructed.<p>I feel myself better.<p>I feel happier."
+        "html": "<p><q>I believe I can see the futute<br>Cause I repeat the same routine</q><span>Trent Reznor</span></p><p>It's a usual day. I wake up at 5 or 6 AM, run about 45-60 minutes, have a shower, have a breakfast and here it is: the moment when I can fully relax on a sofa before I turn on my laptop and start working. But while having a lazy time I have a lot of things to catch up. The world was moving while I was sleeping, running, eating, working etc. I can't miss anything. What if it's something really important?<p>I open twitter. Usually I spend about 20-30 minutes a day reading it.<p>I read some hacker's joke today. Not very funny. I don't remember it though.<p><i>Scroll.</i><p>Someone's photo from vacation in Croatia.<p><i>Scroll.</i><p>One of my friends is drinking beer in a bar. Oh course you have to post a photo. Otherwise it doesn't count.<p><i>Scroll.</i><p>Microsoft Edge has been hacked. Again.<p><i>Scroll.</i><p>Puppies.<p>More puppies.<p>Another hacker's joke.<p><p><i>Scroll.</i><p><i>Scroll.</i><p><i>Scroll.</i><p>Scrolling is smoking of the 21st century.<p>After twitter is done I also have an Instagram account to look at. And I have to check \"cudos\" on Strava. And maybe there are some other news I want to read. So, after 40 minutes well spent I feel ready to work.<p>Tomorrow I will repeat the same routine. Because the world is moving while I am sleeping, running, eating and working.<p>The day after tomorrow I will repeat everything from the beginnig. The circle closed.<p>I like numbers, they help you estimate something your mind cannot realize. If I spend 30 minutes a day on social networks (I use it sometimes during the day to reply on something or just if I'm bored, but let's take minimum amount) it makes 182.5 hours during the year. This is approximately 23 standard working days. Just think about it. If I give up half an hour of social networks during the day I get the whole month of productivity. I can spend it on important things. My family, my side project, my hobbies or self-development. Everything of this list gives me MUCH MORE value than twitter or instagram or whatever.<p>After realizing that I have to know what to do.<p>So I did what everyone would do. I deleted my twitter and instagram accounts. I removed all social apps from my phone. I feel happier.<p>And what changed in my life now?<p>I have more time, I have a lot less stress.<p>I feel way more productive and less distructed.<p>I feel myself better.<p>I feel happier."
     },
     {
         "date": "2019-12-31",
         "title": "2019 resume",
-        "html": "<p style='text-align: center'>This year I’ve read 63 books, spent 19079 minutes listening to music, 4290 minutes running, pushed 1703 commits and visited 5 new countries</p>"
+        "announce": "This year I’ve read 63 books, spent 19079 minutes listening to music, 4290 minutes running, pushed 1703 commits and visited 5 new countries",
+        "plain": "This year I’ve read 63 books, spent 19079 minutes listening to music, 4290 minutes running, pushed 1703 commits and visited 5 new countries"
     },
     {
         "date": "2020-01-22",
-        "title": "Switching back to Linux always starts with a compiling the wireless adapter driver</p>",
-        "plain": ".",
+        "title": "Switching back to Linux",
+        "announce": "Switching back to Linux always starts with a compiling the wireless adapter driver",
+        "plain": "Switching back to Linux always starts with a compiling the wireless adapter driver",
         "files": [
             "/blog/files/20200122.jpg"
         ]

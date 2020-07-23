@@ -38,57 +38,160 @@ Hi There! ;)
     /             o     ,'
    /               _,.'^
   /        __,.-"~^
- ',,..--~~^
+ ',,..----^
 -->
 <html>
 
 <head>
-    <title>le blog de asafonov.org</title>
-    <meta charset="utf-8" />
-    <link rel=stylesheet type=text/css href="/style.css">
-    <style>
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-        max-height: 800px;
-        padding: 8px;
-    }
-    h2, .date{
-        text-align: right;
-    }
-    h2 a {
-        font-size: 20pt;
-    }
-    .epigraph {
-        text-align: right;
-        font-style: italic;
-    }
-    .date {
-        background-color: #b0c7d4;
-        color: black;
-    }
-    </style>
+  <title>Alexander Safonov: My new emacs colorscheme</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=stylesheet type=text/css href="/style.css">
+  <link rel=stylesheet type=text/css href="/animation.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pzj1jds.css">
+  <script type="text/javascript" src="/script.js"></script>
 </head>
 
 <body>
-<DIV class="main clear">
-    <div class="top_menu clear">
-        <div><a href="/index.html">About me</a></div>
-        <div><a href="/projects.html">Projects</a></div>
-        <div><a href="/blog/travel.html">Travel</a></div>
-        <div><a href="/books.html">Books</a></div>
-        <div><a href="/blog/blog.html">Blog</a></div>
-    </div>
-    <div id="content" class="content clear">
-      <h2><a href="2016-11-14_My_new_emacs_colorscheme.html">My new emacs colorscheme</a></h2>
-<p class="date">2016-11-14</p>
-<p>Hello, world!<p>Just letting you know I built a new colorscheme for emacs which is absolutely awesome. Go get it <a href='https://github.com/asafonov/emacs-darkred-theme' target='_blank'>here</a>
-<img src="/blog/files/20161114.png">
+  <div class="big_wrap">
+    <div class="wrap flex_wrap">
+      <div class="top_line flex_line clear">
+        <div class="logo"><a href="index.html" class="home" data-text="as"></a></div>
+        <div class="icon mobile" data-before="///" onclick="menuFunction(this)"></div>
+        <div class="top_menu">
+          <a href="/about.html" class="h3 gli {about_active}" data-text="About me">About me</a>
+          <a href="/projects.html" class="h3 gli {projects_active}" data-text="Projects">Projects</a>
+          <a href="/travels.html" class="h3 gli {travels_active}" data-text="Travels">Travels</a>
+          <a href="/books.html" class="h3 gli {books_active}" data-text="Books">Books</a>
+          <a href="/blog.html" class="h3 gli {blog_active}" data-text="Blog">Blog</a>
+        </div>
+        <div class="top_menu_mobile">
+          <a href="/about.html" class="h3 gli" data-text="About me">About me</a>
+          <a href="/projects.html" class="h3 gli" data-text="Projects">Projects</a>
+          <a href="/travels.html" class="h3 gli" data-text="Travels">Travels</a>
+          <a href="/books.html" class="h3 gli" data-text="Books">Books</a>
+          <a href="/blog.html" class="h3 gli" data-text="Blog">Blog</a>
+        </div>
+      </div>
+			<div class="content flex_line item_page wrap clear">
+        <div class="left_menu">
+          <div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2020-01-22_Switching_back_to_Linux.html">
+  <a>
+    <h4>Switching back to Linux</h4>
+    <time>2020-01-22</time>
+    <aside>Switching back to Linux always starts with a compiling the wireless adapter driver</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2019-12-31_2019_resume.html">
+  <a>
+    <h4>2019 resume</h4>
+    <time>2019-12-31</time>
+    <aside>This year I’ve read 63 books, spent 19079 minutes listening to music, 4290 minutes running, pushed 1703 commits and visited 5 new countries</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2018-07-02_How_I_did_quit_social_media.html">
+  <a>
+    <h4>How I did quit social media</h4>
+    <time>2018-07-02</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2017-09-23_Officially_a_surfer.html">
+  <a>
+    <h4>Officially a surfer</h4>
+    <time>2017-09-23</time>
+    <aside>It was a perfect day, perfect experience and the perfect birthday present</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2017-09-03_Officially_a_marathoner.html">
+  <a>
+    <h4>Officially a marathoner</h4>
+    <time>2017-09-03</time>
+    <aside>Yes, it's true, I completed a marathon. 42 km in 4 hours and 40 minutes. And it was absolutely mindblowing and wonderful experience</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-12-21_Winter_in_Spain.html">
+  <a>
+    <h4>Winter in Spain</h4>
+    <time>2016-12-21</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-12-03_Working_late_music.html">
+  <a>
+    <h4>Working late music</h4>
+    <time>2016-12-03</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-11-14_My_new_emacs_colorscheme.html">
+  <a>
+    <h4>My new emacs colorscheme</h4>
+    <time>2016-11-14</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-10-17_Hello__Belgrade.html">
+  <a>
+    <h4>Hello, Belgrade</h4>
+    <time>2016-10-17</time>
+    <aside>It's nice to see you again, wonderful Belgrade</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-10-02_Marathon_Kotor_-_Lovcen.html">
+  <a>
+    <h4>Marathon Kotor - Lovcen</h4>
+    <time>2016-10-02</time>
+    <aside>Встали в воскресенье в половину шестого, чтобы успеть на автовокзал, приехать в другой город, потому что в 8 оттуда стартует горный поход.</aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-09-18_Montenegrin_Sunday.html">
+  <a>
+    <h4>Montenegrin Sunday</h4>
+    <time>2016-09-18</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-09-15_Office_for_today.html">
+  <a>
+    <h4>Office for today</h4>
+    <time>2016-09-15</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2016-09-13_Life_is_hard.html">
+  <a>
+    <h4>Life is hard</h4>
+    <time>2016-09-13</time>
+    <aside></aside>
+  </a>			
+</div>
+<div class="menu_item" onclick="leftmenuFunction(this)" data-href="blog/2015-09-27_My_first_half-marathon.html">
+  <a>
+    <h4>My first half-marathon</h4>
+    <time>2015-09-27</time>
+    <aside>Today me and Lena took a part in amazing event - half marathon in Golden Ring.</aside>
+  </a>			
+</div>
 
-      <div style="text-align:center">&nbsp;&nbsp;&nbsp;</p>
+        </div>
+        <h1 class="glitch" data-text="My new emacs colorscheme">My new emacs colorscheme</h1>
+        <time>2016-11-14</time>
+        <p>Hello, world!<p>Just letting you know I built a new colorscheme for emacs which is absolutely awesome. Go get it <a href='https://github.com/asafonov/emacs-darkred-theme' target='_blank'>here</a><div class="pic">
+  <img src="/blog/files/20161114.png">
+</div>
+
+      </div>
+      <div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>
+      <div class="bottom_line flex_line clear">
+        <div class="last">Created by <a href="https://liworld.online" target="_blank">li</a></div>
+        <div class="social_links">
+          <a href="http://twitter.com/_asafonov" target="_blank" class="twitter"></a>
+          <a href="https://github.com/asafonov" target="_blank" class="github"></a>
+          <a href="https://play.google.com/store/apps/developer?id=Alex+Safonov" target="_blank" class="googleplay"></a>
+        </div>
+      </div>
     </div>
-</DIV>
+  </div>
 </body>
 </html>
