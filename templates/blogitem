@@ -1,0 +1,3 @@
+<h1 class="glitch" data-text="{title}">{title}</h1>
+<time>{date}</time>
+{content}
