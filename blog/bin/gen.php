@@ -55,8 +55,14 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   }
 
   $pages[$page_name]['content'] .= $listcontent;
-  $pages[$item_url]['content'] = $content;
-  $pages[$item_url]['title'] = "Alexander Safonov: {$records[$i]->title}";
+  $pages[$item_url] = [
+    'content' => $content,
+    'title' => "Alexander Safonov: {$records[$i]->title}",
+    'item_title' => $records[$i]->title,
+    'date' => $records[$i]->date,
+    'page_name' => $page_name,
+    'is_item' => true
+  ];
 
   if ($prev_page != $page_num) {
     $prev_page_name = get_page_name($prev_page, $file);
@@ -67,9 +73,17 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
 }
 
 foreach ($pages as $name => $page) {
-  file_put_contents($name, str_replace(
-    ['{content}', '{title}', '{prev}', '{next}'],
-    [$page['content'], $page['title'], isset($page['prev']) ? '<a href="' . $page['prev'] . '">Previous page</a>' : '', isset($page['next']) ? '<a href="' . $page['next'] . '">Next page</a>': ''],
-    $main_template)
-  );
+  if (isset($page['is_item']) && $page['is_item']) {
+    file_put_contents($name, str_replace(
+      ['{content}', '{title}', '{item_title}', '{date}', '{menu}'],
+      [$page['content'], $page['title'], $page['item_title'], $page['date'], $pages[$page['page_name']]['content']],
+      $item_template)
+    );
+  } else {
+    file_put_contents($name, str_replace(
+      ['{content}', '{title}', '{prev}', '{next}'],
+      [$page['content'], $page['title'], isset($page['prev']) ? '<a href="' . $page['prev'] . '">Previous page</a>' : '', isset($page['next']) ? '<a href="' . $page['next'] . '">Next page</a>': ''],
+      $main_template)
+    );
+  }
 }
