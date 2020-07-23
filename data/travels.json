@@ -32,7 +32,8 @@
     {
         "date": "2017-01-31",
         "title": "Marseille",
-        "plain": "We've spent a weekend in Marseille. It's hard not to write anything about this city because of it's history and views.\n\nMarseille meets you with a great view right from the railway station.{img}It has a great port, very enjoyable to walk in.{img}Right here there is \"Bar de la Marine\" - the bar where \"Love actually\" was partly filmed. The fun thing is that Portugal part was filmed there. And we were choosing our next destination between France and Portugal. Looks like we've seen both now :){img}{img}The neighbourhood of our Marseille apartment looks nice.{img}{img}{img}Strangely, we're visiting new cities in time when there are some protests take place there.{img}Marseille is the most hilly city I've seen. And with a lot of streat art.{img}{img}{img}{img}{img}{img}{img}{img}Isle d'If is also there. It's in the center of the photo with a castle on it.{img}And a bit more photos",
+        "announce": "We've spent a weekend in Marseille.",
+        "plain": "We've spent a weekend in Marseille. It's hard not to write anything about this city because of it's history and views.\nMarseille meets you with a great view right from the railway station.{img}\nIt has a great port, very enjoyable to walk in.{img}\nRight here there is \"Bar de la Marine\" - the bar where \"Love actually\" was partly filmed. The fun thing is that Portugal part was filmed there. And we were choosing our next destination between France and Portugal. Looks like we've seen both now :){img}{img}\nThe neighbourhood of our Marseille apartment looks nice.{img}{img}{img}\nStrangely, we're visiting new cities in time when there are some protests take place there.{img}\nMarseille is the most hilly city I've seen. And with a lot of streat art.{img}{img}{img}{img}{img}{img}{img}{img}\nIsle d'If is also there. It's in the center of the photo with a castle on it.{img}\nAnd a bit more photos",
         "files": [
             "/blog/files/20170131_1.jpg",
             "/blog/files/20170131_2.jpg",
@@ -142,7 +143,7 @@
     {
         "date": "2019-03-31",
         "title": "Berlin",
-        "plain": "<pre>VisitedCountries.push('Germany');\nVisitedCountries.length\n&gt;&nbsp;16</pre>",
+        "plain": "<p>VisitedCountries.push('Germany');\nVisitedCountries.length\n&gt;&nbsp;16</p>",
         "files": [
             "/blog/files/20190331_1.jpg",
             "/blog/files/20190331_2.jpg",
@@ -164,7 +165,7 @@
     {
         "date": "2019-08-23",
         "title": "Oslo",
-        "plain": "<pre>$visitedCountries[] = 'Norway';\ncount($visitedCountries);\n&gt;&nbsp;17</pre>",
+        "plain": "<p>$visitedCountries[] = 'Norway';\ncount($visitedCountries);\n&gt;&nbsp;17</p>",
         "files": [
             "/blog/files/20190823_1.jpg",
             "/blog/files/20190823_2.jpg",
@@ -177,7 +178,7 @@
     {
         "date": "2019-09-14",
         "title": "Denmark",
-        "plain": "<pre>visited_countries.append('Denmark')\nlen(visited_countries);\n&gt;&nbsp;18</pre>",
+        "plain": "<p>visited_countries.append('Denmark')\nlen(visited_countries);\n&gt;&nbsp;18</p>",
         "files": [
             "/blog/files/20190914_1.jpg",
             "/blog/files/20190914_2.jpg",
@@ -190,7 +191,8 @@
     {
         "date": "2019-11-23",
         "title": "San Marino",
-        "plain": "<pre>asafonov.visitedCountries++</pre>",
+        "announce": "asafonov.visitedCountries++",
+        "plain": "<p>asafonov.visitedCountries++</p>",
         "files": ["/blog/files/20191123_1.jpg", "/blog/files/20191123_2.jpg", "/blog/files/20191123_3.jpg", "/blog/files/20191123_4.jpg", "/blog/files/20191123_5.jpg", "/blog/files/20191123_6.jpg", "/blog/files/20191123_7.jpg"]
     }
 ]
