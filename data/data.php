@@ -30,6 +30,16 @@ return [
         'books_active' => 'active'
       ]
     ],
+    'cv' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: CV',
+        'content' => file_get_contents('data/cv'),
+        'class' => 'books wrap',
+        'tiramisu' => '<div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>',
+        'cv_active' => 'active'
+      ]
+    ],
     'projects' => [
       'template' => 'main',
       'data' => [
