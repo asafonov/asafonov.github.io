@@ -425,6 +425,46 @@ h4+aside {
   color: var(--text_color_light);
 }
 
+.ul_list {
+  list-style: none;
+}
+
+.ul_list li::before1 {
+  content: "•";
+  color: var(--text_color_light);
+  position: absolute;
+  width: var(--line_size);
+}
+
+.ul_list a {
+  display: initial;
+  border-bottom: var(--text_color_light) 0.1vw groove;
+  color: inherit;
+}
+
+.ul_list p {
+  color: var(--text_color_light);
+}
+
+.ul_list p span {
+  display: block;
+  font-size: var(--small_padding);
+  margin-bottom: var(--mini_padding);
+}
+
+.ul_list.long_list p {
+  margin-bottom: 0;
+}
+
+.ul_list.long_list p:last-child {
+  margin-bottom: var(--line_size);
+}
+
+.ul_list.long_list p.xs {
+  opacity: 0.5;
+  font-size: smaller;
+}
+
 .left_menu .menu_item:last-of-type .ol_list li:last-of-type p {
   margin-bottom: 0;
 }

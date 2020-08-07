@@ -28,6 +28,14 @@ return [
         'books_active' => 'active'
       ]
     ],
+    'cv' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Resume',
+        'content' => file_get_contents('data/cv'),
+        'class' => 'wrap'
+      ]
+    ],
     'projects' => [
       'template' => 'main',
       'data' => [
