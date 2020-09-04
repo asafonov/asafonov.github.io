@@ -54,6 +54,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'spass' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Spass',
+        'content' => file_get_contents('data/spass'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'monly' => [
       'template' => 'main',
       'data' => [

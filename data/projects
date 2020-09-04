@@ -5,6 +5,12 @@
       <aside>Simple HTML5 arkanoid-type game. There is also an Android application</aside>
     </a>
   </div>
+  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="spass.html">
+    <a>
+      <h4>Spass</h4>
+      <aside>Smart password manager for your desktop and for your phone. Both versions can be used separately or easily synced without usage of any cloud storage.</aside>
+    </a>
+  </div>
   <div class="menu_item" onclick="leftmenuFunction(this)" data-href="monly.html">
     <a>
       <h4>Monly</h4>

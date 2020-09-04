@@ -1,0 +1,10 @@
+<h1 class="glitch" data-text="Spass">Spass</h1>
+<p>Spass is a desktop and mobile password manager.  Both versions can be used separately or easily synced without usage of any cloud storage, so you're always the only owner of your passwords.</p>
+<p>Every single design element is thoughtfully created by <a href="https://liworld.online">li</a>
+<p>Soure code for <a href="https://github.com/asafonov/spass" target="_blank">desktop</a> and <a href="https://github.com/asafonov/spass.apk" target="_blank">Android</a> versions are available on github</p>
+<div class="pic">
+  <img src="images/spass/00.png">
+</div>
+<div class="pic">
+  <img src="images/spass/01.png">
+</div>
