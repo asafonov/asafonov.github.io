@@ -92,8 +92,8 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
 foreach ($pages as $name => $page) {
   if (isset($page['is_item']) && $page['is_item']) {
     file_put_contents($name, str_replace(
-      ['{content}', '{title}', '{item_title}', '{date}', '{menu}'],
-      [$page['content'], $page['title'], $page['item_title'], $page['date'], $pages[$page['page_name']]['content']],
+      ['{content}', '{title}', '{item_title}', '{date}'],
+      [$page['content'], $page['title'], $page['item_title'], $page['date']],
       $item_template)
     );
   } else {
