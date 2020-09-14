@@ -77,6 +77,7 @@ Hi There! ;)
         <div class="left_menu">
         {content}
         </div>
+        {pager}
       </div>
       <div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>
       <div class="bottom_line flex_line clear">

@@ -1,16 +1,32 @@
 <?php
 
-function get_page_num($current, $count, $per_page) {
+function get_page_num ($current, $count, $per_page) {
   $page_num = intval(($count - $current) / $per_page) + 1;
   return $page_num;
 }
 
-function get_page_name($page_num, $file) {
+function get_page_name ($page_num, $file) {
   return $page_num == 1 ? "$file.html" : "{$file}{$page_num}.html";
 }
 
-function get_article_name($title, $date) {
+function get_article_name ($title, $date) {
   return 'blog/' . preg_replace('/[^A-z0-9_\-]/', '_', $date . '_' . $title) . '.html';
+}
+
+function get_pager ($page_num, $num_pages, $file) {
+  if ($num_pages == 1) {
+    return '';
+  }
+
+  $ret = '<div class="pager">';
+
+  for ($i = 1; $i <= $num_pages; ++$i) {
+    $page_name = get_page_name($i, $file);
+    $is_active = $page_num == $i ? ' class="active"' : '';
+    $ret .= "<a href='$page_name'$is_active>$i</a>";
+  }
+
+  return "$ret</div>";
 }
 
 $file = count($argv) > 1 ? $argv[1] : 'blog';
@@ -21,6 +37,7 @@ if (count($records) == 0) {
 }
 
 $per_page = 15;
+$num_pages = intval(count($records) / $per_page) + (count($records) % $per_page > 0 ? 1 : 0);
 $prev_page = 1;
 $pages = [];
 $main_template = file_get_contents('./templates/blog');
@@ -54,6 +71,7 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   }
 
   $pages[$page_name]['content'] .= $listcontent;
+  $pages[$page_name]['page_num'] = $page_num;
   $pages[$item_url] = [
     'content' => $content,
     'title' => "Alexander Safonov: {$records[$i]->title}",
@@ -80,8 +98,8 @@ foreach ($pages as $name => $page) {
     );
   } else {
     file_put_contents($name, str_replace(
-      ['{content}', '{title}', '{prev}', '{next}'],
-      [$page['content'], $page['title'], isset($page['prev']) ? '<a href="' . $page['prev'] . '">Previous page</a>' : '', isset($page['next']) ? '<a href="' . $page['next'] . '">Next page</a>': ''],
+      ['{content}', '{title}', '{pager}'],
+      [$page['content'], $page['title'], get_pager($page['page_num'], $num_pages, $file)],
       $main_template)
     );
   }

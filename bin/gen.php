@@ -24,4 +24,5 @@ foreach ($data['pages'] as $pagename => $param) {
 
     file_put_contents(ROOT_DIR . '/' . $pagename . '.html', preg_replace('/\{[A-z]+}/sim', '', $page));
 }
+
 echo "\n";
