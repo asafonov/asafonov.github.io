@@ -89,17 +89,19 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   }
 }
 
+$active_page = "{$file}_active";
+
 foreach ($pages as $name => $page) {
   if (isset($page['is_item']) && $page['is_item']) {
     file_put_contents($name, str_replace(
-      ['{content}', '{title}', '{item_title}', '{date}'],
-      [$page['content'], $page['title'], $page['item_title'], $page['date']],
+      ['{content}', '{title}', '{item_title}', '{date}', "{{$active_page}}"],
+      [$page['content'], $page['title'], $page['item_title'], $page['date'], 'active'],
       $item_template)
     );
   } else {
     file_put_contents($name, str_replace(
-      ['{content}', '{title}', '{pager}'],
-      [$page['content'], $page['title'], get_pager($page['page_num'], $num_pages, $file)],
+      ['{content}', '{title}', '{pager}', "{{$active_page}}"],
+      [$page['content'], $page['title'], get_pager($page['page_num'], $num_pages, $file), 'active'],
       $main_template)
     );
   }
