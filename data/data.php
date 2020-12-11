@@ -19,7 +19,7 @@ return [
         'about_active' => 'active'
       ]
     ],
-    'books' => [
+    'reading' => [
       'template' => 'main',
       'data' => [
         'title' => 'Alexander Safonov: Damaging my eyes',
