@@ -1,5 +1,5 @@
-<div class="menu_item" onclick="leftmenuFunction(this)" data-href="{item_url}">
-  <a>
+<div class="menu_item">
+  <a href="{item_url}" onclick="leftmenuFunction(this, event)">
     <h4>{title}</h4>
     <time>{date}</time>
     <aside>{announce}</aside>

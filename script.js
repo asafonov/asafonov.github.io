@@ -16,10 +16,11 @@ function menuFunction (el) {
   el.setAttribute('data-before', isFlex ? '///' : "X");
 }
 
-function leftmenuFunction (el) {
-  el.classList.add('active');
+function leftmenuFunction (el, event) {
+  event.preventDefault();
+  el.parentNode.classList.add('active');
   document.querySelector('.left_menu').classList.add('sub');
-  const href = el.getAttribute('data-href');
+  const href = el.getAttribute('href');
   const goto = function() {location.href = href;};
   setTimeout(goto, 1300);
 }
