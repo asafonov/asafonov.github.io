@@ -1,5 +1,7 @@
 <?php
 
+define('IMAGE_PREVIEW', false);
+
 function get_page_num ($current, $count, $per_page) {
   $page_num = intval(($count - $current) / $per_page) + 1;
   return $page_num;
@@ -50,7 +52,7 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   $page_name = get_page_name($page_num, $file);
   $item_url = get_article_name($records[$i]->title, $records[$i]->date);
   $content = isset($records[$i]->plain) ? '<p>' . str_replace("\n", '<p>', $records[$i]->plain) : $records[$i]->html;
-  $listcontent = str_replace(['{title}', '{date}', '{announce}', '{item_url}'], [$records[$i]->title, $records[$i]->date, isset($records[$i]->announce) ? $records[$i]->announce : '', $item_url], $list_template);
+  $listcontent = str_replace(['{title}', '{date}', '{announce}', '{item_url}', '{img}'], [$records[$i]->title, $records[$i]->date, isset($records[$i]->announce) ? $records[$i]->announce : '', $item_url, IMAGE_PREVIEW && ! empty($records[$i]->files) ? str_replace('{filename}', $records[$i]->files[0], $image_template) : ''], $list_template);
 
   if (! empty($records[$i]->files)) {
     $images_count = substr_count($content, '{img}');

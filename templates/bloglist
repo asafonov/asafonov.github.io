@@ -2,6 +2,6 @@
   <a href="{item_url}" onclick="leftmenuFunction(this, event)">
     <h4>{title}</h4>
     <time>{date}</time>
-    <aside>{announce}</aside>
-  </a>			
+    <aside>{announce}</aside>{img}
+  </a>
 </div>
