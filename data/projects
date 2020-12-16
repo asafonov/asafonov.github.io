@@ -1,42 +1,42 @@
 <div class="left_menu">
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="blockbuster.html">
-    <a>
+  <div class="menu_item">
+    <a href="blockbuster.html" onclick="leftmenuFunction(this, event)">
       <h4>Block'Buster</h4>
       <aside>Simple HTML5 arkanoid-type game. There is also an Android application</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="spass.html">
-    <a>
+  <div class="menu_item">
+    <a href="spass.html" onclick="leftmenuFunction(this, event)">
       <h4>Spass</h4>
       <aside>Smart password manager for your desktop and for your phone. Both versions can be used separately or easily synced without usage of any cloud storage.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="monly.html">
-    <a>
+  <div class="menu_item">
+    <a href="monly.html" onclick="leftmenuFunction(this, event)">
       <h4>Monly</h4>
       <aside>Awesome budget planner supporting transactions logging, budgets, reports, synchronization across your devices and a lot of other features.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="sunrise.html">
-    <a>
+  <div class="menu_item">
+    <a href="sunrise.html" onclick="leftmenuFunction(this, event)">
       <h4>Sunrise</h4>
       <aside>Free Digital Audio Workstation. It's cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="tangerine.html">
-    <a>
+  <div class="menu_item">
+    <a href="tangerine.html" onclick="leftmenuFunction(this, event)">
       <h4>Tangerine</h4>
       <aside>Lightweighted, powerful and free content management system.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/stormbringer">
-    <a>
+  <div class="menu_item">
+    <a href="https://github.com/asafonov/stormbringer" onclick="leftmenuFunction(this, event)">
       <h4>Stormbringer</h4>
       <aside>Stormbringer is an email client for real hackers.</aside>
     </a>
   </div>
-  <div class="menu_item" onclick="leftmenuFunction(this)" data-href="https://github.com/asafonov/eyeless">
-    <a>
+  <div class="menu_item">
+    <a href="https://github.com/asafonov/eyeless" onclick="leftmenuFunction(this, event)">
       <h4>Eyeless</h4>
       <aside>Javascript framework to make dynamic GUI as easy as possible.</aside>
     </a>
