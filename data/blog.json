@@ -101,5 +101,15 @@
         "files": [
             "/blog/files/20200122.jpg"
         ]
+    },
+    {
+        "date": "2022-01-XX",
+        "title": "Winter",
+        "files": [
+            "/blog/files/202201_1.jpg",
+            "/blog/files/202201_2.jpg",
+            "/blog/files/202201_3.jpg",
+            "/blog/files/202201_4.jpg"
+        ]
     }
 ]
