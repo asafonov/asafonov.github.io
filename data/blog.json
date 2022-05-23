@@ -111,5 +111,14 @@
             "/blog/files/202201_3.jpg",
             "/blog/files/202201_4.jpg"
         ]
+    },
+    {
+        "date": "2022-05-23",
+        "title": "Life achievements",
+        "announce": "Finally made it to the Pacific Ocean",
+        "plain": "Finally made it to the Pacific Ocean",
+        "files": [
+            "/blog/files/202201_1.jpg"
+        ]
     }
 ]
