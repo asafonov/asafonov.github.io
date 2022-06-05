@@ -193,12 +193,44 @@
         "title": "San Marino",
         "announce": "asafonov.visitedCountries++",
         "plain": "<p>asafonov.visitedCountries++</p>",
-        "files": ["/blog/files/20191123_1.jpg", "/blog/files/20191123_2.jpg", "/blog/files/20191123_3.jpg", "/blog/files/20191123_4.jpg", "/blog/files/20191123_5.jpg", "/blog/files/20191123_6.jpg", "/blog/files/20191123_7.jpg"]
+        "files": [
+            "/blog/files/20191123_1.jpg",
+            "/blog/files/20191123_2.jpg",
+            "/blog/files/20191123_3.jpg",
+            "/blog/files/20191123_4.jpg",
+            "/blog/files/20191123_5.jpg",
+            "/blog/files/20191123_6.jpg",
+            "/blog/files/20191123_7.jpg"
+        ]
     },
     {
         "date": "2022-04-03",
         "title": "Kaliningrad",
         "plain": "",
-        "files": ["/blog/files/202204_1.jpg", "/blog/files/202204_2.jpg", "/blog/files/202204_3.jpg", "/blog/files/202204_4.jpg", "/blog/files/202204_5.jpg", "/blog/files/202204_6.jpg", "/blog/files/202204_7.jpg", "/blog/files/202204_8.jpg"]
+        "files": [
+            "/blog/files/202204_1.jpg",
+            "/blog/files/202204_2.jpg",
+            "/blog/files/202204_3.jpg",
+            "/blog/files/202204_4.jpg",
+            "/blog/files/202204_5.jpg",
+            "/blog/files/202204_6.jpg",
+            "/blog/files/202204_7.jpg",
+            "/blog/files/202204_8.jpg"
+        ]
+    },
+    {
+        "date": "2022-05-22",
+        "title": "Kamchatka",
+        "plain": "",
+        "files": [
+            "/blog/files/kamchatka1.jpg",
+            "/blog/files/kamchatka2.jpg",
+            "/blog/files/kamchatka3.jpg",
+            "/blog/files/kamchatka4.jpg",
+            "/blog/files/kamchatka5.jpg",
+            "/blog/files/kamchatka6.jpg",
+            "/blog/files/kamchatka7.jpg",
+            "/blog/files/kamchatka8.jpg"
+        ]
     }
 ]
