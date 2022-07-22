@@ -232,5 +232,20 @@
             "/blog/files/kamchatka7.jpg",
             "/blog/files/kamchatka8.jpg"
         ]
+    },
+    {
+        "date": "2022-07-11",
+        "title": "Kazan",
+        "plain": "",
+        "files": [
+            "/blog/files/kazan1.jpg",
+            "/blog/files/kazan2.jpg",
+            "/blog/files/kazam3.jpg",
+            "/blog/files/kazan4.jpg",
+            "/blog/files/kazan5.jpg",
+            "/blog/files/kazan6.jpg",
+            "/blog/files/kazan7.jpg",
+            "/blog/files/kazan8.jpg"
+        ]
     }
 ]
