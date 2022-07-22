@@ -120,5 +120,18 @@
         "files": [
             "/blog/files/20220523.jpg"
         ]
+    },
+    {
+        "date": "2022-07-17",
+        "title": "Living in a tiny house",
+        "announce": "This is what living in a tiny house may look like",
+        "plain": "This is what living in a tiny house may look like",
+        "files": [
+            "/blog/files/20220717_1.jpg",
+            "/blog/files/20220717_2.jpg",
+            "/blog/files/20220717_3.jpg",
+            "/blog/files/20220717_4.jpg",
+            "/blog/files/20220717_5.jpg"
+        ]
     }
 ]
