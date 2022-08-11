@@ -247,5 +247,20 @@
             "/blog/files/kazan7.jpg",
             "/blog/files/kazan8.jpg"
         ]
+    },
+    {
+        "date": "2022-07-31",
+        "title": "Yekaterinburg",
+        "plain": "",
+        "files": [
+            "/blog/files/yekat1.jpg",
+            "/blog/files/yekat2.jpg",
+            "/blog/files/yekat3.jpg",
+            "/blog/files/yekat4.jpg",
+            "/blog/files/yekat5.jpg",
+            "/blog/files/yekat6.jpg",
+            "/blog/files/yekat7.jpg",
+            "/blog/files/yekat8.jpg"
+        ]
     }
 ]
