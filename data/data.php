@@ -72,6 +72,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'cards' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Cards',
+        'content' => file_get_contents('data/cards'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'sunrise' => [
       'template' => 'main',
       'data' => [

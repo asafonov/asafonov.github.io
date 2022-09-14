@@ -18,6 +18,12 @@
     </a>
   </div>
   <div class="menu_item">
+    <a href="cards.html" onclick="leftmenuFunction(this, event)">
+      <h4>Card games</h4>
+      <aside>I love making games, including card ones. Here is some collections of them I made just for fun.</aside>
+    </a>
+  </div>
+  <div class="menu_item">
     <a href="sunrise.html" onclick="leftmenuFunction(this, event)">
       <h4>Sunrise</h4>
       <aside>Free Digital Audio Workstation. It's cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</aside>

@@ -1,0 +1,5 @@
+<h1 class="glitch" data-text="Cards">Cards</h1>
+<p><a href="https://github.com/asafonov/cards.apk" target="_blank">Cards</a> is a small collection of card games I made just for fun, because I enjoy making games. You can play on your Android device or in <a href="https://asafonov.org/cards" target="blank">a browser</a></p>
+<div class="pic">
+  <img src="images/cards.png">
+</div>
