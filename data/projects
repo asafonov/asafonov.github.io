@@ -18,6 +18,12 @@
     </a>
   </div>
   <div class="menu_item">
+    <a href="stille.html" onclick="leftmenuFunction(this, event)">
+      <h4>Stille</h4>
+      <aside>Collection of plugin based bots for matrix. It can tell you the weather, convert currencies, translate words etc.</aside>
+    </a>
+  </div>
+  <div class="menu_item">
     <a href="cards.html" onclick="leftmenuFunction(this, event)">
       <h4>Card games</h4>
       <aside>I love making games, including card ones. Here is some collections of them I made just for fun.</aside>

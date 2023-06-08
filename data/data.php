@@ -90,6 +90,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'stille' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Stille. A collection of bots for matrix',
+        'content' => file_get_contents('data/stille'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'tangerine' => [
       'template' => 'main',
       'data' => [

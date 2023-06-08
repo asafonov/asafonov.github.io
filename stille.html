@@ -43,7 +43,7 @@ Hi There! ;)
 <html>
 
 <head>
-  <title>Alexander Safonov: Projects</title>
+  <title>Alexander Safonov: Projects/Stille. A collection of bots for matrix</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=stylesheet type=text/css href="style.css">
@@ -74,61 +74,39 @@ Hi There! ;)
         </div>
       </div>
       <div class="content flex_line wrap clear">
-        <div class="left_menu">
-  <div class="menu_item">
-    <a href="blockbuster.html" onclick="leftmenuFunction(this, event)">
-      <h4>Block'Buster</h4>
-      <aside>Simple HTML5 arkanoid-type game. There is also an Android application</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="spass.html" onclick="leftmenuFunction(this, event)">
-      <h4>Spass</h4>
-      <aside>Smart password manager for your desktop and for your phone. Both versions can be used separately or easily synced without usage of any cloud storage.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="monly.html" onclick="leftmenuFunction(this, event)">
-      <h4>Monly</h4>
-      <aside>Awesome budget planner supporting transactions logging, budgets, reports, synchronization across your devices and a lot of other features.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="stille.html" onclick="leftmenuFunction(this, event)">
-      <h4>Stille</h4>
-      <aside>Collection of plugin based bots for matrix. It can tell you the weather, convert currencies, translate words etc.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="cards.html" onclick="leftmenuFunction(this, event)">
-      <h4>Card games</h4>
-      <aside>I love making games, including card ones. Here is some collections of them I made just for fun.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="sunrise.html" onclick="leftmenuFunction(this, event)">
-      <h4>Sunrise</h4>
-      <aside>Free Digital Audio Workstation. It's cross-platform, all-in-one music production software including processing audio samples, applying audio effects, providing a set of instruments and others.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="tangerine.html" onclick="leftmenuFunction(this, event)">
-      <h4>Tangerine</h4>
-      <aside>Lightweighted, powerful and free content management system.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="https://github.com/asafonov/stormbringer" onclick="leftmenuFunction(this, event)">
-      <h4>Stormbringer</h4>
-      <aside>Stormbringer is an email client for real hackers.</aside>
-    </a>
-  </div>
-  <div class="menu_item">
-    <a href="https://github.com/asafonov/eyeless" onclick="leftmenuFunction(this, event)">
-      <h4>Eyeless</h4>
-      <aside>Javascript framework to make dynamic GUI as easy as possible.</aside>
-    </a>
-  </div>
+        <h1 class="glitch" data-text="Monly">Stille</h1>
+<p><a href="https://github.com/asafonov/stille">Stille</a> is a collection of plugin based bots for matrix.</p>	
+<p>Currently it contains the following plugins:</p>
+<ul>
+<li><b>weather/forecast</b> prints current weather or forecast in the requested city. Keywords to activate the plugin are <i>weather in</i> or <i>forecast in</i>. For example <i>weather in Belgrade</i>. The plugin requires you to obtain an openweather api key.</li>
+<li><b>translate</b> translates text into selected language. Keyword to activate the plugin is <i>translate</i>. The plugin requires you to obtain a translate.com api key</li>
+<li><b>convert</b> convert currencies. Keyword to activate the plugin is <i>convert</i>. For example <i>convert 1000 usd to eur</i></li>
+<li><b>calc</b> is a simple calculator. Keyword to activate the plugin is <i>calc</i>. For example <i>calc (3+4)*2 - 5</i></li>
+</ul>
+<p>&nbsp;</p>
+<h2>Installation</h2>
+<p>&nbsp;</p>
+<p>Installation is pretty straightforward for a nodejs cli:</p>
+<p>
+  <pre>npm install stille</pre>
+</p>
+<p>or if you want to install it globally<p>
+<p>
+  <pre>sudo npm install -g stille</pre>
+</p>
+<p>That's it, now you can use it</p>
+<p>&nbsp;</p>
+<h2>Usage</h2>
+<p>&nbsp;</p>
+<p>Just start it and follow the instructions
+<p>
+<pre>stille</pre>
+</p>
+<p>&nbsp;</p>
+<h2>Screenshot</h2>
+<p>&nbsp;</p>
+<div class="pic">
+  <img src="images/stille.jpg">
 </div>
 
       </div>

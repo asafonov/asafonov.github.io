@@ -1,0 +1,34 @@
+<h1 class="glitch" data-text="Monly">Stille</h1>
+<p><a href="https://github.com/asafonov/stille">Stille</a> is a collection of plugin based bots for matrix.</p>	
+<p>Currently it contains the following plugins:</p>
+<ul>
+<li><b>weather/forecast</b> prints current weather or forecast in the requested city. Keywords to activate the plugin are <i>weather in</i> or <i>forecast in</i>. For example <i>weather in Belgrade</i>. The plugin requires you to obtain an openweather api key.</li>
+<li><b>translate</b> translates text into selected language. Keyword to activate the plugin is <i>translate</i>. The plugin requires you to obtain a translate.com api key</li>
+<li><b>convert</b> convert currencies. Keyword to activate the plugin is <i>convert</i>. For example <i>convert 1000 usd to eur</i></li>
+<li><b>calc</b> is a simple calculator. Keyword to activate the plugin is <i>calc</i>. For example <i>calc (3+4)*2 - 5</i></li>
+</ul>
+<p>&nbsp;</p>
+<h2>Installation</h2>
+<p>&nbsp;</p>
+<p>Installation is pretty straightforward for a nodejs cli:</p>
+<p>
+  <pre>npm install stille</pre>
+</p>
+<p>or if you want to install it globally<p>
+<p>
+  <pre>sudo npm install -g stille</pre>
+</p>
+<p>That's it, now you can use it</p>
+<p>&nbsp;</p>
+<h2>Usage</h2>
+<p>&nbsp;</p>
+<p>Just start it and follow the instructions
+<p>
+<pre>stille</pre>
+</p>
+<p>&nbsp;</p>
+<h2>Screenshot</h2>
+<p>&nbsp;</p>
+<div class="pic">
+  <img src="images/stille.jpg">
+</div>

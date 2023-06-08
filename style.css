@@ -47,6 +47,18 @@
   box-sizing: border-box;
 }
 
+pre {
+  font-family: monospace;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
 .clear:after {
   clear: both;
   content: " ";
