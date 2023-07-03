@@ -90,6 +90,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'tgirc' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/TgIrc. A bridge between telegram and irc',
+        'content' => file_get_contents('data/tgirc'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'stille' => [
       'template' => 'main',
       'data' => [

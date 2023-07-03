@@ -43,7 +43,7 @@ Hi There! ;)
 <html>
 
 <head>
-  <title>Alexander Safonov: Projects/Stille. A collection of bots for matrix</title>
+  <title>Alexander Safonov: Projects/TgIrc. A bridge between telegram and irc</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=stylesheet type=text/css href="style.css">
@@ -74,40 +74,41 @@ Hi There! ;)
         </div>
       </div>
       <div class="content flex_line wrap clear">
-        <h1 class="glitch" data-text="Stille">Stille</h1>
-<p><a href="https://github.com/asafonov/stille">Stille</a> is a collection of plugin based bots for matrix.</p>	
-<p>Currently it contains the following plugins:</p>
-<ul>
-<li><b>weather/forecast</b> prints current weather or forecast in the requested city. Keywords to activate the plugin are <i>weather in</i> or <i>forecast in</i>. For example <i>weather in Belgrade</i>. The plugin requires you to obtain an openweather api key.</li>
-<li><b>translate</b> translates text into selected language. Keyword to activate the plugin is <i>translate</i>. The plugin requires you to obtain a translate.com api key</li>
-<li><b>convert</b> convert currencies. Keyword to activate the plugin is <i>convert</i>. For example <i>convert 1000 usd to eur</i></li>
-<li><b>calc</b> is a simple calculator. Keyword to activate the plugin is <i>calc</i>. For example <i>calc (3+4)*2 - 5</i></li>
-</ul>
-<p>&nbsp;</p>
+        <h1 class="glitch" data-text="TgIrc">TgIrc</h1>
+<p><a href="https://github.com/asafonov/tgirc">TgIrc</a>  is a bridge between telegram and irc so you can chat with your friends on telegram using your favorite irc client.</p>	
+
 <h2>Installation</h2>
 <p>&nbsp;</p>
-<p>Installation is pretty straightforward for a nodejs cli:</p>
-<p>
-  <pre>npm install stille</pre>
-</p>
-<p>or if you want to install it globally<p>
-<p>
-  <pre>sudo npm install -g stille</pre>
-</p>
+<p>Installation is pretty straightforward for a nodejs application:</p>
+<p><pre>npm install tgirc</pre></p>
 <p>That's it, now you can use it</p>
+
+<h2>Configuration</h2>
 <p>&nbsp;</p>
+<p>To start using tgirc you need to get api_id and api_hash for the application:</p>
+<ul>
+<li>Login to <a href="https://my.telegram.org">your Telegram account</a></li>
+<li>Select API Development Tools</li>
+<li>Create new application. Remember that your api_hash is secret</li>
+</ul>
+
 <h2>Usage</h2>
 <p>&nbsp;</p>
-<p>Just start it and follow the instructions
-<p>
-<pre>stille</pre>
-</p>
-<p>&nbsp;</p>
-<h2>Screenshot</h2>
-<p>&nbsp;</p>
-<div class="pic">
-  <img src="images/stille.jpg">
-</div>
+<p>First you need to login to your telegram account. To do it use tgirc command. Just follow the instructions there. You will be asked for you telegram phone number and OTP code. Please note that 2FA and QR-Code auth currently not supported. Next you will be asked to configure the parameters of irc server to connect for using telegram from your irc client</p>
+<p>When you're done with registering your tgirc application it will start automatically right after registration</p>
+<p><pre>asafonov@isengard:~$ tgirc
+tgirc started on 127.0.0.1:9099
+</pre></p>
+<p>If you see something like this, you may connect to your localhost machine. Here is and example for irssi:</p>
+<p><pre>servers = (
+  {
+    address = "localhost";
+    port = "9099";
+    password = "tgirc";
+  }
+);</pre></p>
+
+<h2>Have fun!</h2>
 
       </div>
       <div class="tiramisu" onclick="topFunction()" id="tiramisu">tira mi su</div>

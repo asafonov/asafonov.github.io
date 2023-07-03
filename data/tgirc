@@ -1,0 +1,35 @@
+<h1 class="glitch" data-text="TgIrc">TgIrc</h1>
+<p><a href="https://github.com/asafonov/tgirc">TgIrc</a>  is a bridge between telegram and irc so you can chat with your friends on telegram using your favorite irc client.</p>	
+
+<h2>Installation</h2>
+<p>&nbsp;</p>
+<p>Installation is pretty straightforward for a nodejs application:</p>
+<p><pre>npm install tgirc</pre></p>
+<p>That's it, now you can use it</p>
+
+<h2>Configuration</h2>
+<p>&nbsp;</p>
+<p>To start using tgirc you need to get api_id and api_hash for the application:</p>
+<ul>
+<li>Login to <a href="https://my.telegram.org">your Telegram account</a></li>
+<li>Select API Development Tools</li>
+<li>Create new application. Remember that your api_hash is secret</li>
+</ul>
+
+<h2>Usage</h2>
+<p>&nbsp;</p>
+<p>First you need to login to your telegram account. To do it use tgirc command. Just follow the instructions there. You will be asked for you telegram phone number and OTP code. Please note that 2FA and QR-Code auth currently not supported. Next you will be asked to configure the parameters of irc server to connect for using telegram from your irc client</p>
+<p>When you're done with registering your tgirc application it will start automatically right after registration</p>
+<p><pre>asafonov@isengard:~$ tgirc
+tgirc started on 127.0.0.1:9099
+</pre></p>
+<p>If you see something like this, you may connect to your localhost machine. Here is and example for irssi:</p>
+<p><pre>servers = (
+  {
+    address = "localhost";
+    port = "9099";
+    password = "tgirc";
+  }
+);</pre></p>
+
+<h2>Have fun!</h2>
