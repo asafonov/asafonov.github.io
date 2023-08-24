@@ -51,7 +51,7 @@ for ($i = count($records) - 1, $count = $i; $i >= 0; --$i) {
   $page_num = get_page_num($i, $count, $per_page);
   $page_name = get_page_name($page_num, $file);
   $item_url = get_article_name($records[$i]->title, $records[$i]->date);
-  $content = isset($records[$i]->plain) ? '<p>' . str_replace("\n", '<p>', $records[$i]->plain) : $records[$i]->html;
+  $content = isset($records[$i]->plain) ? '<p>' . str_replace("\n", '<p>', $records[$i]->plain) : (isset($records[$i]->html) ? $records[$i]->html : '');
   $listcontent = str_replace(['{title}', '{date}', '{announce}', '{item_url}', '{img}'], [$records[$i]->title, $records[$i]->date, isset($records[$i]->announce) ? $records[$i]->announce : '', $item_url, IMAGE_PREVIEW && ! empty($records[$i]->files) ? str_replace('{filename}', $records[$i]->files[0], $image_template) : ''], $list_template);
 
   if (! empty($records[$i]->files)) {
