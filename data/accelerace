@@ -1,0 +1,8 @@
+<h1 class="glitch" data-text="Accelerace">Accelerace</h1>
+<p><a href="https://asafonov.org/accelerace" target="_blank">Accelerace</a> is a simple HTML5 racing game made just for fun. It's a kind of a modern take on the retro microprocessor game from my childhood. It is written in pure Javascript and works in every modern browser. There is also an <a href="https://github.com/asafonov/accelerace.apk/releases" target="_blank">Android application</a>.</p>
+<p>Every single design element is thoughtfully created by <a href="https://liworld.online">li</a>
+<p>Soure code for <a href="https://github.com/asafonov/accelerace" target="_blank">browser</a> and <a href="https://github.com/asafonov/accelerace.apk" target="_blank">Android</a> versions are available on github</p>
+<p>Please see the video below for more details
+<div class="pic">
+  <video autoplay controls width="360"><source src="video/accelerace/00.mp4" /></video>
+</div>

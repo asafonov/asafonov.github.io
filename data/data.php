@@ -45,6 +45,15 @@ return [
         'projects_active' => 'active'
       ]
     ],
+    'accelerace' => [
+      'template' => 'main',
+      'data' => [
+        'title' => 'Alexander Safonov: Projects/Acceleeace',
+        'content' => file_get_contents('data/accelerace'),
+        'class' => 'wrap',
+        'projects_active' => 'active'
+      ]
+    ],
     'blockbuster' => [
       'template' => 'main',
       'data' => [
