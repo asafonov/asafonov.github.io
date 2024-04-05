@@ -292,5 +292,17 @@
             "/blog/files/202310_Stockholm9.jpg",
             "/blog/files/202310_Stockholm10.jpg"
         ]
+    },
+    {
+        "date": "2023-11-26",
+        "title": "Antalya",
+        "plain": "",
+        "files": [
+            "/blog/files/202310_Antalya1.jpg",
+            "/blog/files/202310_Antalya2.jpg",
+            "/blog/files/202310_Antalya3.jpg",
+            "/blog/files/202310_Antalya4.jpg",
+            "/blog/files/202310_Antalya5.jpg"
+        ]
     }
 ]
