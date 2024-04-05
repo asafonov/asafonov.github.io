@@ -262,5 +262,22 @@
             "/blog/files/yekat7.jpg",
             "/blog/files/yekat8.jpg"
         ]
+    },
+    {
+        "date": "2023-10-19",
+        "title": "Stockholm",
+        "plain": "",
+        "files": [
+            "/blog/files/202310_Stockholm1.jpg",
+            "/blog/files/202310_Stockholm2.jpg",
+            "/blog/files/202310_Stockholm3.jpg",
+            "/blog/files/202310_Stockholm4.jpg",
+            "/blog/files/202310_Stockholm5.jpg",
+            "/blog/files/202310_Stockholm6.jpg",
+            "/blog/files/202310_Stockholm7.jpg",
+            "/blog/files/202310_Stockholm8.jpg",
+            "/blog/files/202310_Stockholm9.jpg",
+            "/blog/files/202310_Stockholm10.jpg"
+        ]
     }
 ]
