@@ -12,7 +12,7 @@ function get_page_name ($page_num, $file) {
 }
 
 function get_article_name ($title, $date) {
-  return 'blog/' . preg_replace('/[^A-z0-9_\-]/', '_', $date . '_' . $title) . '.html';
+  return 'blog/' . preg_replace('/[, ]+/', '_', $date . '_' . $title) . '.html';
 }
 
 function get_pager ($page_num, $num_pages, $file) {
