@@ -315,5 +315,23 @@
             "/blog/files/202311_Antalya4.jpg",
             "/blog/files/202311_Antalya5.jpg"
         ]
+    },
+    {
+        "date": "2024-07-24",
+        "title": "Stenungson",
+        "plain": "",
+        "files": [
+            "/blog/files/202407_Stenungson01.jpg",
+            "/blog/files/202407_Stenungson02.jpg",
+            "/blog/files/202407_Stenungson03.jpg",
+            "/blog/files/202407_Stenungson04.jpg",
+            "/blog/files/202407_Stenungson05.jpg",
+            "/blog/files/202407_Stenungson06.jpg",
+            "/blog/files/202407_Stenungson07.jpg",
+            "/blog/files/202407_Stenungson08.jpg",
+            "/blog/files/202407_Stenungson09.jpg",
+            "/blog/files/202407_Stenungson10.jpg",
+            "/blog/files/202407_Stenungson11.jpg"
+        ]
     }
 ]
