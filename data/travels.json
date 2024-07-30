@@ -334,5 +334,20 @@
             "/blog/files/202407_Stenungson10.jpg",
             "/blog/files/202407_Stenungson11.jpg"
         ]
+    },
+    {
+        "date": "2024-07-29",
+        "title": "Gothenburg",
+        "plain": "",
+        "files": [
+            "/blog/files/gothenburg1.jpg",
+            "/blog/files/gothenburg2.jpg",
+            "/blog/files/gothenburg3.jpg",
+            "/blog/files/gothenburg4.jpg",
+            "/blog/files/gothenburg5.jpg",
+            "/blog/files/gothenburg6.jpg",
+            "/blog/files/gothenburg7.jpg",
+            "/blog/files/gothenburg8.jpg"
+        ]
     }
 ]
