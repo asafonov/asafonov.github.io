@@ -133,5 +133,16 @@
             "/blog/files/20220717_4.jpg",
             "/blog/files/20220717_5.jpg"
         ]
+    },
+    {
+        "date": "2024-08-08",
+        "title": "From where I run",
+        "files": [
+            "/blog/files/20240808_1.jpg",
+            "/blog/files/20240808_2.jpg",
+            "/blog/files/20240808_3.jpg",
+            "/blog/files/20240808_4.jpg",
+            "/blog/files/20240808_5.jpg"
+        ]
     }
 ]
