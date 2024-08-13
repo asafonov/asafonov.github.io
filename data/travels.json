@@ -349,5 +349,19 @@
             "/blog/files/gothenburg7.jpg",
             "/blog/files/gothenburg8.jpg"
         ]
+    },
+    {
+        "date": "2024-08-01",
+        "title": "Copenhagen",
+        "plain": "",
+        "files": [
+            "/blog/files/copenhagen1.jpg",
+            "/blog/files/copenhagen2.jpg",
+            "/blog/files/copenhagen3.jpg",
+            "/blog/files/copenhagen4.jpg",
+            "/blog/files/copenhagen5.jpg",
+            "/blog/files/copenhagen6.jpg",
+            "/blog/files/copenhagen7.jpg"
+        ]
     }
 ]
