@@ -362,5 +362,16 @@
             "/blog/files/copenhagen6.jpg",
             "/blog/files/copenhagen7.jpg"
         ]
+    },
+    {
+        "date": "2024-11-04",
+        "title": "Seliger",
+        "plain": "",
+        "files": [
+            "/blog/files/20241104_1.jpg",
+            "/blog/files/20241104_2.jpg",
+            "/blog/files/20241104_3.jpg",
+            "/blog/files/20241104_4.jpg"
+        ]
     }
 ]
