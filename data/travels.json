@@ -373,5 +373,21 @@
             "/blog/files/20241104_3.jpg",
             "/blog/files/20241104_4.jpg"
         ]
+    },
+    {
+        "date": "2025-03-01",
+        "title": "Oslo",
+        "plain": "",
+        "files": [
+            "/blog/files/oslo_2025_01.jpg",
+            "/blog/files/oslo_2025_02.jpg",
+            "/blog/files/oslo_2025_03.jpg",
+            "/blog/files/oslo_2025_04.jpg",
+            "/blog/files/oslo_2025_05.jpg",
+            "/blog/files/oslo_2025_06.jpg",
+            "/blog/files/oslo_2025_07.jpg",
+            "/blog/files/oslo_2025_08.jpg",
+            "/blog/files/oslo_2025_09.jpg"
+        ]
     }
 ]
