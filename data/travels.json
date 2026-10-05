@@ -389,5 +389,19 @@
             "/blog/files/oslo_2025_08.jpg",
             "/blog/files/oslo_2025_09.jpg"
         ]
+    },
+    {
+        "date": "2026-09-28",
+        "title": "Durmitor, Montenegro",
+        "plain": "",
+        "files": [
+            "/blog/files/20260928_1.jpg",
+            "/blog/files/20260928_2.jpg",
+            "/blog/files/20260928_3.jpg",
+            "/blog/files/20260928_4.jpg",
+            "/blog/files/20260928_5.jpg",
+            "/blog/files/20260928_6.jpg",
+            "/blog/files/20260928_7.jpg"
+        ]
     }
 ]
