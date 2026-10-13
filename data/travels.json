@@ -13,25 +13,25 @@
     },
     {
         "date": "2017-01-09",
-        "title": "Valencia",
+        "title": "Valencia, Spain",
         "plain": "",
         "files": ["/blog/files/20170109_1.jpg", "/blog/files/20170109_2.jpg", "/blog/files/20170109_3.jpg", "/blog/files/20170109_4.jpg", "/blog/files/20170109_5.jpg", "/blog/files/20170109_6.jpg", "/blog/files/20170109_7.jpg", "/blog/files/20170109_8.jpg", "/blog/files/20170109_9.jpg", "/blog/files/20170109_10.jpg"]
     },
     {
         "date": "2017-01-16",
-        "title": "Tarragona",
+        "title": "Tarragona, Spain",
         "plain": "",
         "files": ["/blog/files/20170116.jpg", "/blog/files/20170116_2.jpg", "/blog/files/20170116_3.jpg", "/blog/files/20170116_4.jpg", "/blog/files/20170116_5.jpg", "/blog/files/20170116_6.jpg", "/blog/files/20170116_7.jpg"]
     },
     {
         "date": "2017-01-25",
-        "title": "Cannes",
+        "title": "Cannes, France",
         "plain": "",
         "files": ["/blog/files/20170125_1.jpg", "/blog/files/20170125_2.jpg", "/blog/files/20170125_3.jpg", "/blog/files/20170125_4.jpg", "/blog/files/20170125_5.jpg", "/blog/files/20170125_6.jpg", "/blog/files/20170125_7.jpg", "/blog/files/20170125_8.jpg", "/blog/files/20170125_9.jpg", "/blog/files/20170125_10.jpg", "/blog/files/20170125_11.jpg", "/blog/files/20170125_12.jpg", "/blog/files/20170125_13.jpg"]
     },
     {
         "date": "2017-01-31",
-        "title": "Marseille",
+        "title": "Marseille, France",
         "announce": "We've spent a weekend in Marseille.",
         "plain": "We've spent a weekend in Marseille. It's hard not to write anything about this city because of it's history and views.\nMarseille meets you with a great view right from the railway station.{img}\nIt has a great port, very enjoyable to walk in.{img}\nRight here there is \"Bar de la Marine\" - the bar where \"Love actually\" was partly filmed. The fun thing is that Portugal part was filmed there. And we were choosing our next destination between France and Portugal. Looks like we've seen both now :){img}{img}\nThe neighbourhood of our Marseille apartment looks nice.{img}{img}{img}\nStrangely, we're visiting new cities in time when there are some protests take place there.{img}\nMarseille is the most hilly city I've seen. And with a lot of streat art.{img}{img}{img}{img}{img}{img}{img}{img}\nIsle d'If is also there. It's in the center of the photo with a castle on it.{img}\nAnd a bit more photos",
         "files": [
@@ -116,7 +116,7 @@
     },
     {
         "date": "2017-09-16",
-        "title": "Lisbon",
+        "title": "Lisbon, Portugal",
         "plain": "",
         "files": [
             "/blog/files/20170916_1.jpg",
@@ -142,7 +142,7 @@
     },
     {
         "date": "2019-03-31",
-        "title": "Berlin",
+        "title": "Berlin, Germany",
         "plain": "<p>VisitedCountries.push('Germany');\nVisitedCountries.length\n&gt;&nbsp;16</p>",
         "files": [
             "/blog/files/20190331_1.jpg",
@@ -153,7 +153,7 @@
     },
     {
         "date": "2019-04-14",
-        "title": "Madrid",
+        "title": "Madrid, Spain",
         "plain": "",
         "files": [
             "/blog/files/20190414_1.jpg",
@@ -164,7 +164,7 @@
     },
     {
         "date": "2019-08-23",
-        "title": "Oslo",
+        "title": "Oslo, Norway",
         "plain": "<p>$visitedCountries[] = 'Norway';\ncount($visitedCountries);\n&gt;&nbsp;17</p>",
         "files": [
             "/blog/files/20190823_1.jpg",
@@ -205,7 +205,7 @@
     },
     {
         "date": "2022-04-03",
-        "title": "Kaliningrad",
+        "title": "Kaliningrad, Russia",
         "plain": "",
         "files": [
             "/blog/files/202204_1.jpg",
@@ -220,7 +220,7 @@
     },
     {
         "date": "2022-05-22",
-        "title": "Kamchatka",
+        "title": "Kamchatka, Russia",
         "plain": "",
         "files": [
             "/blog/files/kamchatka1.jpg",
@@ -235,7 +235,7 @@
     },
     {
         "date": "2022-07-11",
-        "title": "Kazan",
+        "title": "Kazan, Russia",
         "plain": "",
         "files": [
             "/blog/files/kazan1.jpg",
@@ -250,7 +250,7 @@
     },
     {
         "date": "2022-07-31",
-        "title": "Yekaterinburg",
+        "title": "Yekaterinburg, Russia",
         "plain": "",
         "files": [
             "/blog/files/yekat1.jpg",
@@ -289,7 +289,7 @@
     },
     {
         "date": "2023-10-19",
-        "title": "Stockholm",
+        "title": "Stockholm, Sweden",
         "plain": "",
         "files": [
             "/blog/files/202310_Stockholm1.jpg",
@@ -306,7 +306,7 @@
     },
     {
         "date": "2023-11-26",
-        "title": "Antalya",
+        "title": "Antalya, Turkey",
         "plain": "",
         "files": [
             "/blog/files/202311_Antalya1.jpg",
@@ -318,7 +318,7 @@
     },
     {
         "date": "2024-07-24",
-        "title": "Stenungsön",
+        "title": "Stenungsön, Sweden",
         "announce": "My happy place.",
         "plain": "",
         "files": [
@@ -336,7 +336,7 @@
     },
     {
         "date": "2024-07-29",
-        "title": "Gothenburg",
+        "title": "Gothenburg, Sweden",
         "plain": "",
         "files": [
             "/blog/files/gothenburg1.jpg",
@@ -351,7 +351,7 @@
     },
     {
         "date": "2024-08-01",
-        "title": "Copenhagen",
+        "title": "Copenhagen, Denmark",
         "plain": "",
         "files": [
             "/blog/files/copenhagen1.jpg",
@@ -365,7 +365,7 @@
     },
     {
         "date": "2024-11-04",
-        "title": "Seliger",
+        "title": "Seliger, Russia",
         "plain": "",
         "files": [
             "/blog/files/20241104_1.jpg",
@@ -376,7 +376,7 @@
     },
     {
         "date": "2025-03-01",
-        "title": "Oslo",
+        "title": "Oslo, Norway",
         "plain": "",
         "files": [
             "/blog/files/oslo_2025_01.jpg",
@@ -404,6 +404,23 @@
             "/blog/files/queenstown7.jpg",
             "/blog/files/queenstown8.jpg",
             "/blog/files/queenstown9.jpg"
+        ]
+    },
+    {
+        "date": "March 2026",
+        "title": "Beijing, China",
+        "plain": "",
+        "files": [
+            "/blog/files/beijing1.jpg",
+            "/blog/files/beijing2.jpg",
+            "/blog/files/beijing3.jpg",
+            "/blog/files/beijing4.jpg",
+            "/blog/files/beijing5.jpg",
+            "/blog/files/beijing6.jpg",
+            "/blog/files/beijing7.jpg",
+            "/blog/files/beijing8.jpg",
+            "/blog/files/beijing9.jpg",
+            "/blog/files/beijing10.jpg"
         ]
     },
     {
